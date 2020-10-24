@@ -36,12 +36,6 @@ module.exports = function(config) {
     return new cleanCSS({}).minify(code).styles;
   });
 
-  config.addFilter("getReadingTime", text => {
-    const wordsPerMinute = 200;
-    const numberOfWords = text.split(/\s/g).length;
-    return Math.ceil(numberOfWords / wordsPerMinute);
-  });
-
   // Date formatting filter
   config.addFilter("htmlDateString", dateObj => {
     return new Date(dateObj).toISOString().split("T")[0];

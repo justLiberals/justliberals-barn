@@ -1,6 +1,6 @@
 {% from "partials/icon.njk" import icon %}
 
-<div class="container" style="background-color: white">
+<div class="container" style="background-color: #ffc60a">
     <header class="blog-header py-3 px-0">
         <div class="row p-2">
             {% if site.logo %}
@@ -9,9 +9,6 @@
             </div>
             {% endif %}
             <div class="col-md-10 order-md-1 px-2">
-                    <a class="blog-header-logo d-none d-md-block pb-2" href="{{ site.url }}">{{ site.title }}</a>
-                    <a class="blog-header-logo d-md-none d-block text-center" href="{{ site.url }}">{{ site.short_title }}</a>
-                    <a class="blog-sub-header-logo d-none d-md-block" href="{{ site.url }}">{{ site.description }}</a>
             </div>
         </div>
         <div class="pt-1 d-flex justify-content-center justify-content-md-start px-0">
