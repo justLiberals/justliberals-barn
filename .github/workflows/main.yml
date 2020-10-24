@@ -1,0 +1,30 @@
+name: Deploy website
+on:
+  repository_dispatch:
+    types: rebuild
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-west-2
+
+    - name: npm install
+      run: npm i
+
+    - name: npm run-script build
+      env:
+        GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }} 
+      run: npm run-script build
+    
+    - name: Push to S3
+      run: aws s3 sync ./docs/ s3://www.justliberals.org.uk --delete --acl public-read

@@ -1,0 +1,15 @@
+{% macro card(post) %}
+    <div class="blog-post">
+        <img class="img-fluid rounded-lg" src="{{ post.feature_image }}" alt="{{ post.title }}"></img>
+        <div class="media pt-2">
+          <img class="author-profile-image rounded-circle" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+          <div class="media-body pl-2">
+            <a href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
+            <h6 class="blog-post-meta">By <span>{{ post.primary_author.name }}</span> | {{ post.published_at.toDateString() }}</h6>
+            </div>
+        </div>
+        {% set html = post.html.split('<hr>') %}
+        {{ html[0] | safe }}
+        <a type="button" class="btn btn-primary float-right" href="{{ post.url }}">Read More</a>
+    </div>
+{% endmacro %}

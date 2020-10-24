@@ -1,0 +1,15 @@
+{
+  "title": "just Liberals",
+  "short_title": "just Liberals",
+  "description": "A group of Liberals",
+  "navigation": [
+    {
+      "url": "",
+      "label": "Home"
+    },
+    {
+      "url": "about",
+      "label": "About"
+    }
+  ]
+}

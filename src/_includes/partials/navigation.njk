@@ -1,0 +1,19 @@
+<div class="btn-group w-100" role="group" aria-label="Primary Navigation">
+    {% for item in site.navigation %}
+    {% if item.subitems %}
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ item.label }}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            {% for subitem in item.subitems %}
+            <a class="dropdown-item" href="{{ site.url }}/{{ subitem.url }}">{{ subitem.label }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+    <a class="btn btn-primary" href="{{ site.url }}/{{ item.url }}">{{ item.label }}</a>
+    {% endif %}
+    {% endfor %}
+    <button type="button" class="btn btn-primary btn-block d-none d-md-flex" style="opacity:1" disabled></button>
+</div>

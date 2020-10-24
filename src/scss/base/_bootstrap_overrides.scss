@@ -1,0 +1,179 @@
+// Override Bootstraps Variables Here
+// Reference node_modules/bootstrap/scss/_variables.scss for a full list of variables
+// https://getbootstrap.com/docs/4.3/getting-started/theming/#variable-defaults
+$primary: #ffc60a;
+$secondary: #000000;
+$link-color: #ffc60a;
+$link-hover-color: #000000;
+$font-family-sans-serif: "Montserrat";
+$font-weight-normal: 400;
+$headings-font-weight: 900;
+$font-size-base: 1rem;
+$h2-font-size: 2.4rem;
+$h3-font-size: 1.2rem;
+
+.author-profile-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+}
+
+.card-title {
+    color: #ffc60a;
+}
+
+.blog-post a {
+    font-weight: bold;
+}
+
+.blog-header {
+    line-height: 1;
+}
+
+.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.blog-header-logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog-sub-header-logo {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1rem;
+    color: #000000;
+}
+
+.blog-sub-header-logo:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.card-img-top {
+    height: auto;
+}
+
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+.blog-pagination>.btn {
+    border-radius: 2rem;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.blog-footer a:link {
+    color: #ffc60a;
+}
+
+.jumbotron {
+    background-size: cover;
+    height: 100%;
+    min-height: 500px;
+    margin-bottom: 0;
+}
+
+.blog-sidebar {
+    color: #000000;
+}
+
+.clicky-card:hover {
+    text-decoration: none;
+    color: #ffc60a;
+}
+
+.btn {
+    -webkit-appearance: none !important;
+}
+
+$card-height: 100%
