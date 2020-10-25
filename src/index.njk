@@ -8,7 +8,7 @@ pagination:
 {% extends 'layouts/default.njk' %}
 {% from "partials/card.njk" import card %}
 {% block content %}
-<div class="col-md-8 blog-main">
+<div class="col-xl-8 blog-main">
     <section class="post-feed">
         {% for post in posts %}
             {{ card(post) }}

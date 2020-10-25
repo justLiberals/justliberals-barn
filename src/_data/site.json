@@ -1,7 +1,7 @@
 {
   "title": "justLiberals",
   "short_title": "justLiberals",
-  "description": "Just a group of Liberals, fighting for Just Liberalism",
+  "description": "Just a group of Liberals, fighting for a Just society",
   "logo": "assets/images/justLiberals.png",
   "navigation": [
     {
@@ -9,7 +9,7 @@
       "label": "Home"
     },
     {
-      "url": "about",
+      "url": "about/",
       "label": "About"
     }
   ]
