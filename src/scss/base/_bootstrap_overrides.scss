@@ -3,8 +3,8 @@
 // https://getbootstrap.com/docs/4.3/getting-started/theming/#variable-defaults
 $primary: #ffc60a;
 $secondary: #000000;
-$link-color: #ffc60a;
-$link-hover-color: #000000;
+$link-color: #120aff;
+$link-hover-color: #120aff;
 $font-family-sans-serif: "Montserrat", sans-serif;
 $font-weight-normal: 400;
 $headings-font-weight: 900;
@@ -17,14 +17,6 @@ $h3-font-size: 1.2rem;
     width: 100px;
     height: 100px;
     background: #555;
-}
-
-.card-title {
-    color: #ffc60a;
-}
-
-.blog-post a {
-    font-weight: bold;
 }
 
 .blog-header {
@@ -132,7 +124,12 @@ $h3-font-size: 1.2rem;
 }
 
 .blog-post-title {
-    margin-bottom: .25rem;
+    margin-bottom: .25rem;    
+    color: #000000;
+}
+
+.blog-post-title a, .blog-post-title a:hover {
+    color: #000000;
 }
 
 .blog-post-meta {
@@ -163,7 +160,7 @@ $h3-font-size: 1.2rem;
     margin-bottom: 0;
 }
 
-.blog-sidebar {
+.blog-sidebar, .blog-sidebar a, .blog-sidebar a:hover {
     color: #000000;
 }
 
