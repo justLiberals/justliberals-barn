@@ -5,6 +5,7 @@ const fs = require("fs");
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const localImages = require("eleventy-plugin-local-images");
 const ghostContentAPI = require("@tryghost/content-api");
+const fetch = require('node-fetch');
 
 const htmlMinTransform = require("./src/transforms/html-min-transform.js");
 
@@ -14,6 +15,7 @@ const api = new ghostContentAPI({
   key: process.env.GHOST_CONTENT_API_KEY,
   version: "v2"
 });
+
 
 // Strip Ghost domain from urls
 const stripDomain = url => {
@@ -86,6 +88,15 @@ module.exports = function(config) {
 
       // Convert publish date into a Date object
       post.published_at = new Date(post.published_at);
+    
+    (async function() {
+      for await (post of collection) {
+        let reddit_url = post.excerpt + '.json';
+        let reddit_settings = { method: "Get" };
+        const reddit_comments = await fetch(reddit_url, reddit_settings);
+        post.comments = await reddit_comments.json();
+      }
+      })();
     });
 
     // Bring featured post to the top of the list

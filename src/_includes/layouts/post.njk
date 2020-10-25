@@ -17,6 +17,17 @@
                 {% set html = post.html.split('<hr>') %}
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
+                <div class="comments-section">
+                    <h2>Comments</h2>
+                    {% for comment_tree in post.comments[1]['data']['children'] %}
+                      <strong>{{ comment_tree['data']['author'] }}</strong>
+                      <p>{{ comment_tree['data']['body'] }}</p>
+                      {% for comment_response in comment_tree['data']['replies']['data']['children'] %}
+                        <strong>{{ comment_response['data']['author'] }}</strong>
+                        <p>{{ comment_response['data']['body'] }}</p>
+                      {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
             {% include "partials/sidebar.njk" %}
         </div>
