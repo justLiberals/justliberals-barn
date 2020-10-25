@@ -7,18 +7,19 @@
 {% block content %}
     <article class="blog-post">
         {% if post.feature_image %}
-            <figure class="post-feature-image">
-                <img class="img-fluid rounded pb-2" src="{{ post.feature_image }}" alt="{{ post.title }}"></img>
+            <figure>
+                <img class="img-fluid rounded" src="{{ post.feature_image }}" alt="{{ post.title }}"></img>
             </figure>
         {% endif %}
-        <section class="post-full-content">
-            <h2 class="blog-post-title">{{ post.title }}</h2>
-            <section class="content-body load-external-scripts">
+        <div class="row">
+            <div class="col-xl-8">
+                <h2 class="blog-post-title">{{ post.title }}</h2>
                 {% set html = post.html.split('<hr>') %}
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
-            </section>
-        </section>
+            </div>
+            {% include "partials/sidebar.njk" %}
+        </div>
     </article>
 {% endblock %}
 
