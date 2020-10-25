@@ -19,13 +19,21 @@
                 {{ html[1] | safe }}
                 <div class="comments-section">
                     <h2>Comments</h2>
-                    {% for comment_tree in post.comments[1]['data']['children'] %}
-                      <strong>{{ comment_tree['data']['author'] }}</strong>
-                      <p>{{ comment_tree['data']['body'] }}</p>
-                      {% for comment_response in comment_tree['data']['replies']['data']['children'] %}
-                        <strong>{{ comment_response['data']['author'] }}</strong>
-                        <p>{{ comment_response['data']['body'] }}</p>
-                      {% endfor %}
+                    {% for comment_1 in post.comments[1]['data']['children'] %}
+                    <strong>{{ comment_1['data']['author'] }}</strong>
+                    <p>{{ comment_1['data']['body'] }}</p>
+                    {% for comment_2 in comment_1['data']['replies']['data']['children'] %}
+                    <strong>&nbsp&nbsp{{ comment_2['data']['author'] }}</strong>
+                    <p>&nbsp&nbsp{{ comment_2['data']['body'] }}</p>
+                    {% for comment_3 in comment_2['data']['replies']['data']['children'] %}
+                    <strong>&nbsp&nbsp&nbsp&nbsp{{ comment_3['data']['author'] }}</strong>
+                    <p>&nbsp&nbsp&nbsp&nbsp{{ comment_3['data']['body'] }}</p>
+                    {% for comment_4 in comment_3['data']['replies']['data']['children'] %}
+                    <strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ comment_4['data']['author'] }}</strong>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{ comment_4['data']['body'] }}</p>
+                    {% endfor %}
+                    {% endfor %}
+                    {% endfor %}
                     {% endfor %}
                 </div>
             </div>
