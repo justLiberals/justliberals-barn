@@ -30,4 +30,4 @@ jobs:
       run: aws s3 sync ./docs/ s3://www.justliberals.org.uk --delete --acl public-read --size-only --no-progress|cut -d " " -f2 | tee invalidate
     
     - name: Invalidate changed files
-      run: if [[ `cat invalidate` != "" ]]; then cat invalidate|xargs printf -- '/%s\n'|xargs aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION }} --paths
+      run: if [[ `cat invalidate` != "" ]]; then cat invalidate|xargs printf -- '/%s\n'|xargs aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION }} --paths; fi
