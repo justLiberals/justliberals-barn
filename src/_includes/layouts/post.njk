@@ -5,7 +5,7 @@
 {% set codeinjection_foot = post.codeinjection_foot %}
 
 {% block content %}
-    <article class="blog-post">
+    <article class="blog-post px-3">
         {% if post.feature_image %}
             <figure>
                 <img class="img-fluid rounded" src="{{ post.feature_image }}" alt="{{ post.title }}"></img>
@@ -43,8 +43,8 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                    <div class="text-center">
-                        <a href="{{  "https://www.reddit.com" + post.comments[0]['data']['children'][0]['data']['permalink'] }}" type="button" class="btn btn-primary btn-lg" target="_blank"><img height="20px" src="{{ site.url }}/assets/images/snoo.png"/> Join the conversation! <img height="20px" src="{{ site.url }}/assets/images/snoo.png"/></button>
+                    <div class="text-center my-4">
+                        <a href="{{  "https://www.reddit.com" + post.comments[0]['data']['children'][0]['data']['permalink'] }}" type="button" class="btn btn-primary btn-lg" target="_blank">Join the conversation!</button>
                     </div>
                 </div>
             </div>

@@ -3,12 +3,14 @@
 <div class="blog-header">
     <header class="container">
         <nav class="navbar navbar-light navbar-expand-xl">
-            <a class="navbar-brand order-xl-last" href="{{ site.url }}/">
-                <img class="site-logo" height="50" src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }}">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="navbar-brand order-xl-last">
+                <a class="navbar-brand order-xl-last" href="{{ site.url }}/">
+                    <img class="site-logo" src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }}">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="navbar-header mr-auto collapse navbar-collapse"  id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     {% for item in site.navigation %}
