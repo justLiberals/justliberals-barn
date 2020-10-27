@@ -91,10 +91,15 @@ module.exports = function(config) {
     
     (async function() {
       for await (post of collection) {
-        let reddit_url = post.excerpt + '.json';
-        let reddit_settings = { method: "Get" };
-        const reddit_comments = await fetch(reddit_url, reddit_settings);
-        post.comments = await reddit_comments.json();
+        if (post.hasOwnProperty("excerpt")) {
+          let reddit_url = post.excerpt + '.json';
+          let reddit_settings = { method: "Get" };
+          try {
+            const reddit_comments = await fetch(reddit_url, reddit_settings);
+            post.comments = await reddit_comments.json();
+          }
+          catch(err) {}
+        }
       }
       })();
     });

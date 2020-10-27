@@ -18,7 +18,7 @@
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
                 <div class="comments-section">
-                    <h2>Comments</h2>
+                    <a name="comments"><h2>Comments</h2></a>
                     {% for comment_1 in post.comments[1]['data']['children'] %}
                     <strong>{{ comment_1['data']['author'] }}</strong>
                     <p>{{ comment_1['data']['body'] }}</p>
@@ -49,14 +49,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ site.url + page.url }}">
     <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
-    <meta name="twitter:description" content="{{ post.excerpt }}">
+    <meta name="twitter:description" content="{{ html[0] | safe }}">
     <meta name="twitter:image" content="{{ post.feature_image }}">
 
     <!--Schema-->
     <link rel="author" href="{{ post.primary_author.website }}">
     <link rel="publisher" href="{{ site.url }}">
     <meta itemprop="name" content="{{ title }} – {{ site.title }}">
-    <meta itemprop="description" content="{{ post.excerpt }}">
+    <meta itemprop="description" content="{{ html[0] | safe }}">
     <meta itemprop="image" content="{{ post.feature_image }}">
 
     <!-- Facebook OpenGraph -->
@@ -64,7 +64,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ title }} – {{ site.title }}">
     <meta property="og:image" content="{{ post.feature_image }}">
-    <meta property="og:description" content="{{ post.excerpt }}">
+    <meta property="og:description" content="{{ html[0] | safe }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="{{ site.lang }}">
     <meta property="article:author" content="{{ site.url }}">
