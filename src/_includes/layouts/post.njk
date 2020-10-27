@@ -18,7 +18,7 @@
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
                 <div class="comments-section">
-                    <a name="comments"><h2>Comments</h2></a>
+                    <a href="#comments" style="color: black"><h2 id="comments">Comments</h2></a>
                     {% for comment_1 in post.comments[1]['data']['children'] %}
                     <strong>{{ comment_1['data']['author'] }}</strong>
                     <p>{{ comment_1['data']['body'] }}</p>
