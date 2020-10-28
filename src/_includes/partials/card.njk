@@ -1,13 +1,18 @@
-{% macro card(post) %}
+{% macro card(post, author_page="False") %}
     <div class="blog-post">
         <figure>
             <img class="img-fluid rounded-lg" src="{{ post.feature_image }}" alt=""></img>
         </figure>
         <div class="media">
-            {% if not author_page  %}<img class="author-profile-image rounded-circle d-none d-sm-block mr-sm-2" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>{% endif %}
+        {{ author.page }}
+            {% if author_page == "False" %}
+            <a href="{{ post.primary_author.url }}">
+                <img class="author-profile-image rounded-circle d-none d-sm-block mr-sm-2" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+            </a>
+            {% endif %}
             <div class="media-body blog-post-title">
                 <a href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
-                <h6 class="blog-post-meta">{% if not author_page %}By <a href="{{ post.primary_author.url }}">{{ post.primary_author.name }}</a> | {% endif %}{{ post.published_at.toDateString() }}</h6>
+                <h6 class="blog-post-meta">{% if author_page == "False" %}By <a href="{{ post.primary_author.url }}">{{ post.primary_author.name }}</a> | {% endif %}{{ post.published_at.toDateString() }}</h6>
             </div>
         </div>
         {% set html = post.html.split('<hr>') %}

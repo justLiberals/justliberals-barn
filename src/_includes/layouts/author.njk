@@ -6,12 +6,11 @@
 <div class="row">
     <div class="col-xl-8">
         {% include "partials/author-header.njk" %}
-        {% set author_page = True %}
         <section class="post-feed">
             <h2>Posts by {{ author.name }}</h2>
             {% if author.posts %}
                 {% for post in author.posts %}
-                    {{ card(post) }}
+                    {{ card(post, author_page="True") }}
                 {% endfor %}
             {% else %}
                 <p>No posts to be found</p>
