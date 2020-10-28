@@ -4,10 +4,10 @@
             <img class="img-fluid rounded-lg" src="{{ post.feature_image }}" alt=""></img>
         </figure>
         <div class="media">
-          <img class="author-profile-image rounded-circle d-none d-sm-block" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
-          <div class="media-body pl-sm-2 blog-post-title">
-            <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-            <h6 class="blog-post-meta">By <span>{{ post.primary_author.name }}</span> | {{ post.published_at.toDateString() }}</h6>
+            <img class="author-profile-image rounded-circle d-none d-sm-block" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+            <div class="media-body pl-sm-2 blog-post-title">
+                <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+                <h6 class="blog-post-meta">By <span>{{ post.primary_author.name }}</span> | {{ post.published_at.toDateString() }}</h6>
             </div>
         </div>
         {% set html = post.html.split('<hr>') %}

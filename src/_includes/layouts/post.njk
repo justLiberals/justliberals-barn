@@ -6,14 +6,18 @@
 
 {% block content %}
     <article class="blog-post px-3">
-        {% if post.feature_image %}
             <figure>
                 <img class="img-fluid rounded" src="{{ post.feature_image }}" alt=""></img>
             </figure>
-        {% endif %}
         <div class="row">
             <div class="col-xl-8">
-                <h2 class="blog-post-title">{{ post.title }}</h2>
+                <div class="media">
+                    <img class="author-profile-image rounded-circle d-none d-sm-block" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+                    <div class="media-body pl-sm-2 blog-post-title">
+                        <h2 class="blog-post-title">{{ post.title }}</h2>
+                        <h6 class="blog-post-meta">By <span>{{ post.primary_author.name }}</span> | {{ post.published_at.toDateString() }}</h6>
+                    </div>
+                </div>
                 {% set html = post.html.split('<hr>') %}
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
