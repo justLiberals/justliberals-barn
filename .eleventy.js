@@ -134,11 +134,18 @@ module.exports = function(config) {
     collection.forEach(async author => {
       const authorsPosts = posts.filter(post => {
         post.url = stripDomain(post.url);
+        post.published_at = new Date(post.published_at);
         return post.primary_author.id === author.id;
       });
       if (authorsPosts.length) author.posts = authorsPosts;
 
       author.url = stripDomain(author.url);
+
+      // Stripping redundant characters into a "short" website url
+      if (author.website) {
+        author.website_short = author.website.replace(/https?:\/\/w*\.?/, '');
+        author.website_short = author.website_short.replace(/\/$/, '');
+      }
     });
 
     return collection;

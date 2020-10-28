@@ -1,24 +1,28 @@
 <header class="author-header">
     <div class="author-header-content">
-        <h1>{{ author.name }}</h1>
-        <p>{{ content | safe }}</p>
-        {% if author.facebook and author.twitter and author.website %}
-            <div class="author-header-meta">
+         <div class="media pb-4">
+            <img class="author-profile-max rounded-circle d-none d-sm-block" src="{{ author.profile_image }}" alt="Photo of {{ author.name }}"/>
+            <div class="media-body pl-sm-2 blog-post-title">
+                <a href="{{ post.url }}"><h2 class="blog-post-title">{{ author.name }}</h2></a>
+                <p>{{ content | safe }}</p>
+                <div class="author-header-meta">
                 {% if author.facebook %}
-                    <a class="author-header-item" href="https://facebook.com/{{ author.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <div>
+                    <a class="author-header-item" href="https://facebook.com/{{ author.facebook }}" target="_blank" rel="noopener noreferrer">Facebook: {{ author.facebook }}</a>
+                </div>
                 {% endif %}
                 {% if author.twitter %}
-                    <a class="author-header-item" href="https://twitter.com/{{ author.twitter | replace("@", "") }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <div>
+                    <a class="author-header-item" href="https://twitter.com/{{ author.twitter | replace("@", "") }}" target="_blank" rel="noopener noreferrer">Twitter: {{ author.twitter | replace("@", "") }} </a>
+                </div>
                 {% endif %}
                 {% if author.website %}
-                    <a class="author-header-item" href="{{ author.website }}" target="_blank" rel="noopener noreferrer">Website</a>
+                <div>
+                    <a class="author-header-item" href="{{ author.website }}" target="_blank" rel="noopener noreferrer">Website: {{ author.website_short }}</a>
+                </div>
                 {% endif %}
+                </div>
             </div>
-        {% endif %}
-    </div>
-    {% if author.profile_image %}
-        <div class="author-header-image">
-            <img src="{{ author.profile_image }}" alt="Photo of {{ author.name }}">
         </div>
-    {% endif %}
+    </div>
 </header>
