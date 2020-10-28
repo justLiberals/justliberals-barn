@@ -22,7 +22,11 @@ date: Last Modified
     <link href="{{ site.url + post.url }}"/>
     <updated>{{ post.updated_at }}</updated>
     <id>{{ site.url + post.url }}</id>
-    <content type="html">{{ post.html | htmlToAbsoluteUrls(site.url + page.url) }}</content>
+    <content type="html">
+        {% set html = post.html.split('<hr>') %}
+        {{ html[0] | safe }}
+        {{ html[1] | safe }}
+    </content>
   </entry>
   {%- endfor %}
 </feed>
