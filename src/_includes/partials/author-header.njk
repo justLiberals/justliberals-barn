@@ -8,17 +8,33 @@
                 <div class="author-header-meta">
                 {% if author.facebook %}
                 <div>
-                    <a class="author-header-item" href="https://facebook.com/{{ author.facebook }}" target="_blank" rel="noopener noreferrer">Facebook: {{ author.facebook }}</a>
+                    <a class="author-header-item" href="https://facebook.com/{{ author.facebook }}" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                        {{ author.facebook }}
+                    </a>
                 </div>
                 {% endif %}
                 {% if author.twitter %}
                 <div>
-                    <a class="author-header-item" href="https://twitter.com/{{ author.twitter | replace("@", "") }}" target="_blank" rel="noopener noreferrer">Twitter: {{ author.twitter | replace("@", "") }} </a>
+                    <a class="author-header-item" href="https://twitter.com/{{ author.twitter | replace("@", "") }}" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                        {{ author.twitter | replace("@", "") }}
+                    </a>
                 </div>
                 {% endif %}
                 {% if author.website %}
                 <div>
-                    <a class="author-header-item" href="{{ author.website }}" target="_blank" rel="noopener noreferrer">Website: {{ author.website_short }}</a>
+                    <a class="author-header-item" href="{{ author.website }}" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                            <use xlink:href="#link"></use>
+                        </svg>
+
+                        {{ author.website_short }}
+                    </a>
                 </div>
                 {% endif %}
                 </div>
