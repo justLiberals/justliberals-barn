@@ -1,14 +1,14 @@
 {% if pagination.previousPageHref or pagination.nextPageHref %}
-    <nav class="pagination" role="pagination">
+    <nav class="pagination btn-group" role="pagination group">
         {% if page.permalink != pagination.previousPageHref %}
-            <a href="{{ pagination.previousPageHref }}">Prev page</a>
+            <a type="button" class="btn btn-primary float-right" href="{{ pagination.previousPageHref }}">Prev page</a>
         {% else %}
-            <span>Prev page</span>
+            <a type="button" class="btn btn-primary float-right disabled" href="{{ pagination.previousPageHref }}">Prev page</a>
         {% endif %}
         {% if page.permalink != pagination.nextPageHref %}
-            <a href="{{ pagination.nextPageHref }}">Next page</a>
+            <a type="button" class="btn btn-primary float-right" href="{{ pagination.nextPageHref }}">Next page</a>
         {% else %}
-            <span>Next page</span>
+            <a type="button" class="btn btn-primary float-right disabled" href="{{ pagination.nextPageHref }}">Next page</a>
         {% endif %}
     </nav>
 {% endif %}
