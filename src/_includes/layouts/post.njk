@@ -25,7 +25,7 @@
                 {{ html[1] | safe }}
                 <div class="comments-section">
                     <a href="#comments" style="color: black"><h2 id="comments">Comments</h2></a>
-                    <h6 style="font-style: italic; font-weight: 400">from our Reddit community<h6>
+                    <h6 style="font-style: italic; font-weight: 400">from our Reddit community</h6>
                     {% for comment_1 in post.comments[1]['data']['children'] %}
                     {% if comment_1['data']['author'] != "[deleted]" %}
                     <div class="comment-even">
