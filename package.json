@@ -11,10 +11,8 @@
     "sass": "sass --style=compressed src/scss/main.scss src/_includes/css/main.css",
     "prod:sass": "npm run sass",
     "prod:11ty": "cross-env ELEVENTY_ENV=prod ELEVENTY_URL='https://www.justliberals.org.uk' eleventy",
-    "prod:parcel": "parcel build ./src/js/main.js --out-dir ./docs",
     "dev:sass": "npm run sass -- --watch",
-    "dev:11ty": "cross-env ELEVENTY_ENV=dev ELEVENTY_URL='http://localhost:8080' eleventy --serve",
-    "dev:parcel": "parcel watch ./src/js/main.js --out-dir ./docs"
+    "dev:11ty": "cross-env ELEVENTY_ENV=dev ELEVENTY_URL='http://localhost:8080' eleventy --serve"
   },
   "repository": {
     "type": "git",
