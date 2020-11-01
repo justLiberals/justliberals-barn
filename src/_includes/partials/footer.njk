@@ -1,7 +1,12 @@
     <footer class="blog-footer p-4 bg-secondary">
+        <span>{% for item in site.navigation %}
+        <a style="color: white;" href="{{ site.url }}/{{ item.url }}">{{ item.label }}</a>
+        {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
+        {% endfor %}</span>
+        <br/>
+        <br/>
         <nav class="nav d-flex justify-content-center">
             All content Copyright © justLiberals 2020, except where stated.
         </nav>
 
     </footer>
-    <script src="{{ site.url }}/main.js"></script>
