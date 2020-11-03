@@ -35,7 +35,12 @@
                         {% if comment_fragment.startsWith("&gt;") %}
                         <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
                         {% else %}
-                        <p>{{ comment_fragment }}</p>
+                        <p>
+                        {% set comment_lines = comment_fragment.split('\n') %}
+                        {% for comment_line in comment_lines %}
+                        {{ comment_line }}<br/>
+                        {% endfor %}
+                        </p>
                         {% endif %}
                         {% endfor %}
                         {% for comment_2 in comment_1['data']['replies']['data']['children'] %}
@@ -47,7 +52,12 @@
                             {% if comment_fragment.startsWith("&gt;") %}
                             <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
                             {% else %}
-                            <p>{{ comment_fragment }}</p>
+                            <p>
+                            {% set comment_lines = comment_fragment.split('\n') %}
+                            {% for comment_line in comment_lines %}
+                            {{ comment_line }}<br/>
+                            {% endfor %}
+                            </p>
                             {% endif %}
                             {% endfor %}
                             {% for comment_3 in comment_2['data']['replies']['data']['children'] %}
@@ -59,7 +69,12 @@
                                 {% if comment_fragment.startsWith("&gt;") %}
                                 <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
                                 {% else %}
-                                <p>{{ comment_fragment }}</p>
+                                <p>
+                                {% set comment_lines = comment_fragment.split('\n') %}
+                                {% for comment_line in comment_lines %}
+                                {{ comment_line }}<br/>
+                                {% endfor %}
+                                </p>
                                 {% endif %}
                                 {% endfor %}
                                 {% for comment_4 in comment_3['data']['replies']['data']['children'] %}
@@ -71,7 +86,12 @@
                                     {% if comment_fragment.startsWith("&gt;") %}
                                     <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
                                     {% else %}
-                                    <p>{{ comment_fragment }}</p>
+                                    <p>
+                                    {% set comment_lines = comment_fragment.split('\n') %}
+                                    {% for comment_line in comment_lines %}
+                                    {{ comment_line }}<br/>
+                                    {% endfor %}
+                                    </p>
                                     {% endif %}
                                     {% endfor %}
                                 </div>
