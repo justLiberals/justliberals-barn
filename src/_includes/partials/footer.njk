@@ -1,7 +1,11 @@
     <footer class="blog-footer p-4 bg-secondary">
         <span>{% for item in site.navigation %}
-        <a style="color: white;" href="{{ site.url }}/{{ item.url }}">{{ item.label }}</a>
-        {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
+            {% if item.label %}
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
+            {% elif item.svg %}
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" style="fill: white;" aria-hidden="true" focusable="false"><use xlink:href="#{{ item.svg }}"></use></svg></a>
+            {% endif %}
+            {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
         {% endfor %}</span>
         <br/>
         <br/>
@@ -10,3 +14,10 @@
         </nav>
 
     </footer>
+
+
+                        {% if item.label %}
+                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
+                        {% elif item.svg %}
+                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="#{{ item.svg }}"></use></svg></a>
+                        {% endif %}
