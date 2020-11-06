@@ -12,7 +12,11 @@
                 <ul class="navbar-nav mr-auto">
                     {% for item in site.navigation %}
                     <li class="nav-item">
-                        <a class="nav-link {% if page.url == '/' + item.url %}active{% endif %}" href="{{ site.url }}/{{ item.url }}">{{ item.label }}</a>
+                        {% if item.label %}
+                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
+                        {% elif item.svg %}
+                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="#{{ item.svg }}"></use></svg></a>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>

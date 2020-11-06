@@ -6,12 +6,29 @@
   "lang": "en-GB",
   "navigation": [
     {
-      "url": "",
-      "label": "Home"
+      "url": "{{ site.url }}/",
+      "label": "Home",
+      "newtab": false
     },
     {
-      "url": "about/",
-      "label": "About"
+      "url": "https://www.reddit.com/r/justLiberals/",
+      "label": "Discuss",
+      "newtab": true
+    },
+    {
+      "url": "{{ site.url }}/about/",
+      "label": "About",
+      "newtab": false
+    },
+    {
+      "url": "https://www.facebook.com/JustLiberals-105929427985867",
+      "svg": "facebook",
+      "newtab": true
+    },
+    {
+      "url": "https://twitter.com/just_Libs",
+      "svg": "twitter",
+      "newtab": true
     }
   ]
 }
