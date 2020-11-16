@@ -29,7 +29,7 @@
                     {% for comment_1 in post.comments[1]['data']['children'] %}
                     {% if comment_1['data']['author'] != "[deleted]" %}
                     <div class="comment-even">
-                        <strong>{{ comment_1['data']['author'] }}</strong> {{ comment_1['data']['score'] }} points
+                        <strong>{{ comment_1['data']['author'] }}</strong>
                         {% set comment_content = comment_1['data']['body'].split('\n\n') %}
                         {% for comment_fragment in comment_content %}
                         {% if comment_fragment.startsWith("&gt;") %}
@@ -46,7 +46,7 @@
                         {% for comment_2 in comment_1['data']['replies']['data']['children'] %}
                         {% if comment_2['data']['author'] != "[deleted]" %}
                         <div class="comment-odd">
-                            <strong>{{ comment_2['data']['author'] }}</strong> {{ comment_2['data']['score'] }} points
+                            <strong>{{ comment_2['data']['author'] }}</strong>
                             {% set comment_content = comment_2['data']['body'].split('\n\n') %}
                             {% for comment_fragment in comment_content %}
                             {% if comment_fragment.startsWith("&gt;") %}
@@ -63,7 +63,7 @@
                             {% for comment_3 in comment_2['data']['replies']['data']['children'] %}
                             {% if comment_3['data']['author'] != "[deleted]" %}
                             <div class="comment-even">
-                                <strong>{{ comment_3['data']['author'] }}</strong> {{ comment_3['data']['score'] }} points
+                                <strong>{{ comment_3['data']['author'] }}</strong>
                                 {% set comment_content = comment_3['data']['body'].split('\n\n') %}
                                 {% for comment_fragment in comment_content %}
                                 {% if comment_fragment.startsWith("&gt;") %}
@@ -80,7 +80,7 @@
                                 {% for comment_4 in comment_3['data']['replies']['data']['children'] %}
                                 {% if comment_4['data']['author'] != "[deleted]" %}
                                 <div class="comment-odd">
-                                    <strong>{{ comment_4['data']['author'] }}</strong> {{ comment_4['data']['score'] }} points
+                                    <strong>{{ comment_4['data']['author'] }}</strong>
                                     {% set comment_content = comment_4['data']['body'].split('\n\n') %}
                                     {% for comment_fragment in comment_content %}
                                     {% if comment_fragment.startsWith("&gt;") %}
