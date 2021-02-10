@@ -1,38 +1,23 @@
 <aside class="col-xl-4 blog-sidebar">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm position-relative">
-        <div class="card-body">
-            <h5 class="card-text">just a group of Liberals, fighting for a just society</h5>
-            <p class="card-text">justLiberals is a group of Liberals that believes things can be done better.</p>
-        </div>
-    </div>
-    <a class="blog-sidebar" href="https://www.reddit.com/r/justLiberals/">
+    {% for item in site.sidebar %}
+    {% if item.url %}
+    <a class="blog-sidebar" href="{{ item.url }}">
+    {% endif %}
         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm position-relative">
-            <img class="card-img-top" width="100%" src={{ site.url }}/assets/images/discuss.jpg preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt=""></img>
+            {% if item.image %}
+            <img class="card-img-top" width="100%" src={{ site.url }}/{{ item.image }} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt=""></img>
+            {% endif %}
             <div class="col p-3 d-flex flex-column position-static blog-sidebar">
-                <h5 class="card-title">Join our discussion forum</h5>
-                <p class="card-text">We have a discussion forum on Reddit, where Liberals can post interesting articles and links from across the internet - as well as raising their own discussion points.</p>
-                <p class="card-text">This is also where our comments sections are run, so do subscribe and join in.</p>
+                {% if item.title %}
+                <h5 class="card-title">{{ item.title }}</h5>
+                {% endif %}
+                {% for paragraph in item.blurb %}
+                <p class="card-text">{{ paragraph }}</p>
+                {% endfor %}
             </div>
         </div>
+    {% if item.url %}
     </a>
-    <a class="blog-sidebar" href="mailto:submissions@justliberals.org.uk">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm position-relative">
-            <img class="card-img-top" width="100%" src={{ site.url }}/assets/images/write-for-us.jpg preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt=""></img>
-            <div class="col p-3 d-flex flex-column position-static blog-sidebar">
-                <h5 class="card-title">Write for us!</h5>
-                <p class="card-text">We accept submissions! justLiberals seeks to host writing from Liberals across the political spectrum.</p>
-                <p class="card-text">If you'd like to submit an article then click here to send us an email.</p>
-            </div>
-        </div>
-    </a>
-    <a class="blog-sidebar" href="https://www.libdems.org.uk/joining-us">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm position-relative">
-            <img class="card-img-top" width="100%" src={{ site.url }}/assets/images/join-lib-dems.png preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt=""></img>
-            <div class="col p-3 d-flex flex-column position-static blog-sidebar">
-                <h5 class="card-title">The Liberal Democrats</h5>
-                <p class="card-text">The Liberal Democrats are the only party fighting for Liberalism across Great Britain.</p>
-                <p class="card-text">We strongly encourage all our readers and supporters to join them today.</p>
-            </div>
-        </div>
-    </a>
+    {% endif %}
+    {% endfor %}
 </aside>

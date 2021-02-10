@@ -4,6 +4,7 @@
   "description": "Just a group of Liberals, fighting for a Just society",
   "logo": "assets/images/justLiberals.png",
   "lang": "en-GB",
+  "comments": true,
   "navigation": [
     {
       "url": "{{ site.url }}/",
@@ -29,6 +30,41 @@
       "url": "https://twitter.com/just_Libs",
       "svg": "twitter",
       "newtab": true
+    }
+  ],
+  "sidebar": [
+    {
+      "title": "just a group of Liberals, fighting for a just society",
+      "blurb": [
+        "justLiberals is a group of Liberals that believes things can be done better."
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/justLiberals/",
+      "image": "assets/images/discuss.jpg",
+      "title": "Join our discussion forum",
+      "blurb": [
+        "We have a discussion forum on Reddit, where Liberals can post interesting articles and links from across the internet - as well as raising their own discussion points.",
+        "This is also where our comments sections are run, so do subscribe and join in."
+      ]
+    },
+    {
+      "url": "mailto:submissions@justliberals.org.uk",
+      "image": "assets/images/write-for-us.jpg",
+      "title": "Write for us!",
+      "blurb": [
+        "We accept submissions! justLiberals seeks to host writing from Liberals across the political spectrum.",
+        "If you'd like to submit an article then click here to send us an email."
+      ]
+    },
+    {
+      "url": "https://www.libdems.org.uk/joining-us",
+      "image": "assets/images/join-lib-dems.png",
+      "title": "The Liberal Democrats",
+      "blurb": [
+        "The Liberal Democrats are the only party fighting for Liberalism across Great Britain.",
+        "We strongly encourage all our readers and supporters to join them today."
+      ]
     }
   ]
 }
