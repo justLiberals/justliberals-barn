@@ -1,4 +1,4 @@
-    <footer class="blog-footer p-4 bg-secondary">
+    <footer class="blog-footer p-4">
         <span>{% for item in site.navigation %}
             {% if item.label %}
             <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>

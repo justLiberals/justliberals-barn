@@ -2,9 +2,10 @@
 // Reference node_modules/bootstrap/scss/_variables.scss for a full list of variables
 // https://getbootstrap.com/docs/4.3/getting-started/theming/#variable-defaults
 $primary: #ffc60a;
-$secondary: #000000;
-$link-color: #7A00E6;
-$link-hover-color: #7A00E6;
+$secondary: #7A00E6;
+$link-color: #000000;
+$link-highlight-color: #000000;
+$link-decoration: underline;
 $font-family-sans-serif: "Montserrat", sans-serif;
 $font-weight-normal: 400;
 $headings-font-weight: 900;
@@ -18,12 +19,12 @@ $h3-font-size: 1.2rem;
 }
 
 .comment-even {
-    border-left: 5px solid #ffc60a;
+    border-left: 5px solid $primary;
     padding: 1em;
 }
 
 .comment-odd {
-    border-left: 5px solid #7A00E6;
+    border-left: 5px solid $secondary;
     padding: 1em;
 }
 
@@ -31,52 +32,21 @@ $h3-font-size: 1.2rem;
     float: left;
     width: 100px;
     height: 100px;
-    background: #555;
 }
 
 .author-profile-max {
     float: left;
     width: 300px;
     height: 300px;
-    background: #555;
 }
 
 .blog-header {
-    background-color: #ffc60a;
+    background-color: $primary;
 }
 
 .intro {
     font-size: 1.3rem;
     font-weight: 600;
-}
-
-.blog-header-logo {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 2rem;
-    color: #000000;
-}
-
-.blog-header-logo:hover {
-    text-decoration: none;
-    color: #000000;
-}
-
-.blog-sub-header-logo {
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1rem;
-    color: #000000;
-}
-
-.blog-sub-header-logo:hover {
-    text-decoration: none;
-    color: #000000;
-}
-
-.display-4 {
-    font-size: 3rem;
-    font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -146,12 +116,13 @@ $h3-font-size: 1.2rem;
 }
 
 .blog-post-title {
-    margin-bottom: .25rem;    
+    margin-bottom: .25rem;
     color: #000000;
 }
 
 .blog-post-title a, .blog-post-title a:hover {
     color: #000000;
+    text-decoration: none;
 }
 
 .blog-post-meta {
@@ -163,8 +134,7 @@ $h3-font-size: 1.2rem;
     padding: 2.5rem 0;
     color: #ffffff;
     text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
+    background-color: #000000;
 }
 
 .blog-footer p:last-child {
@@ -172,18 +142,12 @@ $h3-font-size: 1.2rem;
 }
 
 .blog-footer a:link {
-    color: #ffc60a;
-}
-
-.jumbotron {
-    background-size: cover;
-    height: 100%;
-    min-height: 500px;
-    margin-bottom: 0;
+    text-decoration: none;
 }
 
 .blog-sidebar, .blog-sidebar a, .blog-sidebar a:hover {
     color: #000000;
+    text-decoration: none;
 }
 
 .btn {
