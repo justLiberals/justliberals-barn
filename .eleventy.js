@@ -70,7 +70,12 @@ module.exports = function(config) {
       for await (post of collection) {
         if (post.hasOwnProperty("excerpt")) {
           let reddit_url = post.excerpt + '.json';
-          let reddit_settings = { method: "Get" };
+          let reddit_settings = {
+            method: 'GET',
+            headers: {
+              'user-agent': 'justLiberals Comment Scraper v0'
+            }
+          };
           try {
             const reddit_comments = await fetch(reddit_url, reddit_settings);
             post.comments = await reddit_comments.json();
