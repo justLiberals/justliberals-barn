@@ -121,27 +121,34 @@
 {%- block seo -%}
     <!--Twitter Card-->
     <meta name="twitter:site" content="{{ site.twitter }}">
-    <meta name="twitter:creator" content="{{ post.primary_author.twitter }}">
+    <meta name="twitter:creator" content="{{ post.primary_author.twitter if post.primary_author.twitter else site.twitter }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ site.url + page.url }}">
-    <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
+    <meta name="twitter:title" content="{{ title }} - {{ site.title }}">
     <meta name="twitter:description" content="{{ html[0] | safe }}">
     <meta name="twitter:image" content="{{ post.feature_image }}">
 
     <!--Schema-->
-    <link rel="author" href="{{ post.primary_author.website }}">
+    <link rel="author" href="{{ post.primary_author.website if post.primary_author.website else site.url }}">
     <link rel="publisher" href="{{ site.url }}">
-    <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+    <meta itemprop="name" content="{{ title }} - {{ site.title }}">
     <meta itemprop="description" content="{{ html[0] | safe }}">
     <meta itemprop="image" content="{{ post.feature_image }}">
 
     <!-- Facebook OpenGraph -->
     <meta property="og:url" content="{{ site.url + page.url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ title }} – {{ site.title }}">
+    <meta property="og:title" content="{{ title }} - {{ site.title }}">
     <meta property="og:image" content="{{ post.feature_image }}">
     <meta property="og:description" content="{{ html[0] | safe }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="{{ site.lang }}">
     <meta property="article:author" content="{{ site.url }}">
+
+    <!-- Canonical URL -->
+    {% if post.canonical == "ALDES" %}
+    <link rel="canonical" href="{{ "https://www.aldes.org.uk" + page.url }}" />
+    {% else %}
+    <link rel="canonical" href="{{ site.url + page.url }}" />
+    {% endif %}
 {%- endblock -%}
