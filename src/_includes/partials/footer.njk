@@ -3,7 +3,7 @@
             {% if item.label %}
             <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
             {% elif item.svg %}
-            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" style="fill: white;" aria-hidden="true" focusable="false"><use xlink:href="#{{ item.svg }}"></use></svg></a>
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" style="fill: white;" focusable="false" aria-labelledby="title"><title id="title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
             {% endif %}
             {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
         {% endfor %}</span>
@@ -14,10 +14,3 @@
         </nav>
 
     </footer>
-
-
-                        {% if item.label %}
-                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
-                        {% elif item.svg %}
-                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" focusable="false" aria-labelledby="title"><title id="title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
-                        {% endif %}
