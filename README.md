@@ -23,15 +23,15 @@ Open the project in an editor, such as Notepad++ or Atom. Follow the guide below
 ``` sh
 node -v
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you are presented with a version number that is newer than v10, skip to step 2.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you are presented with a version number that is newer than v10, skip to step 2.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If the version number is older than v10, or you receive:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If the version number is older than v10, or you receive:
 
 ```sh
 'node' is not recognized as an internal or external command, operable program or batch file.
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download and install [Node.js] with default installation settings.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download and install [Node.js] with default installation settings.
 
 2. Once Node.js is installed, open **Node.js command prompt** and navigate to the directory where your `justLiberals.org.uk` fork is. This command will most likely be:
 
@@ -70,7 +70,7 @@ npm start
 npm start
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, open up your browser and navigate to the localhost URL again.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, open up your browser and navigate to the localhost URL again.
 
 ### Local Testing on Linux
 
