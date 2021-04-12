@@ -13,9 +13,9 @@
                     {% for item in site.navigation %}
                     <li class="nav-item">
                         {% if item.label %}
-                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
+                        <a class="nav-link {% if page.url == item.url %}active{% endif %}" {% if item.newtab == true %}target="_blank"{% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}">{{ item.label }}</a>
                         {% elif item.svg %}
-                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" focusable="false" aria-labelledby="title"><title id="title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
+                        <a class="nav-link" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}"><svg class="icon" focusable="false" aria-labelledby="{{ item.svg }}_header_title"><title id="{{ item.svg }}_header_title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
                         {% endif %}
                     </li>
                     {% endfor %}
