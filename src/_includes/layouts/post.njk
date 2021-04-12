@@ -23,6 +23,21 @@
                 {% set html = post.html.split('<hr>') %}
                 {{ html[0] | safe }}
                 {{ html[1] | safe }}
+                <br/>
+                {% if site.newsletter == true %}
+                <h2>Want to keep in touch?</h2>
+                <p>Sign up to our newsletter for a monthly briefing with all the latest news, opinion and analysis from justLiberals and our partners.</p>
+                <form action="https://meadow.justliberals.org.uk/signup" method="POST">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address:</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="my_cool@email.address">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="secret" tabindex="-1" value="11111111"></div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br/>
+                {% endif %}
             </div>
             {% include "partials/sidebar.njk" %}
         </div>

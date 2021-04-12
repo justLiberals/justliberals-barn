@@ -5,6 +5,7 @@
   "logo": "assets/images/justLiberals.png",
   "lang": "en-GB",
   "comments": true,
+  "newsletter": true,
   "navigation": [
     {
       "url": "{{ site.url }}/",
