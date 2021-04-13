@@ -5,16 +5,12 @@
   "logo": "assets/images/justLiberals.png",
   "lang": "en-GB",
   "comments": true,
+  "newsletter": true,
   "navigation": [
     {
       "url": "{{ site.url }}/",
       "label": "Home",
       "newtab": false
-    },
-    {
-      "url": "https://www.reddit.com/r/justLiberals/",
-      "label": "Discuss",
-      "newtab": true
     },
     {
       "url": "{{ site.url }}/about/",
@@ -37,15 +33,6 @@
       "title": "just a group of Liberals, fighting for a just society",
       "blurb": [
         "justLiberals is a group of Liberals that believes things can be done better."
-      ]
-    },
-    {
-      "url": "https://www.reddit.com/r/justLiberals/",
-      "image": "assets/images/discuss.jpg",
-      "title": "Join our discussion forum",
-      "blurb": [
-        "We have a discussion forum on Reddit, where Liberals can post interesting articles and links from across the internet - as well as raising their own discussion points.",
-        "This is also where our comments sections are run, so do subscribe and join in."
       ]
     },
     {
