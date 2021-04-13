@@ -1,9 +1,9 @@
     <footer class="blog-footer p-4">
         <span>{% for item in site.navigation %}
             {% if item.label %}
-            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}">{{ item.label }}</a>
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}">{{ item.label }}</a>
             {% elif item.svg %}
-            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %}href="{{ item.url }}"><svg class="icon" style="fill: white;" focusable="false" aria-labelledby="title"><title id="title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
+            <a style="color: white;" {% if item.newtab == true %}target="_blank" {% endif %} {% if (item.newtab == true) and ('http' in item.url) %}rel="noopener" {% endif %} href="{{ item.url }}"><svg class="icon" style="fill: white;" focusable="false" aria-labelledby="{{ item.svg }}_footer_title"><title id="{{ item.svg }}_footer_title" lang="en">{{ item.svg }} logo link</title><use xlink:href="#{{ item.svg }}"></use></svg></a>
             {% endif %}
             {% if not loop.last %}&nbsp&nbsp|&nbsp&nbsp{% endif %}
         {% endfor %}</span>
