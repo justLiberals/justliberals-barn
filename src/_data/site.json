@@ -18,6 +18,11 @@
       "newtab": false
     },
     {
+      "url": "{{ site.url }}/what-is-liberalism/",
+      "label": "What is Liberalism?",
+      "newtab": false
+    },
+    {
       "url": "https://www.facebook.com/JustLiberals-105929427985867",
       "svg": "facebook",
       "newtab": true
