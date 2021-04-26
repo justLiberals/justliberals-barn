@@ -1,0 +1,68 @@
+---
+title: Join ALDES
+---
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+<div class="blog-post">
+    <figure>
+        <img class="img-fluid rounded pb-2" src="{{ site.url }}/assets/images/hero_apprentices.jpg" alt="Join us"></img>
+    </figure>
+    <div class="row">
+        <div class="col-xl-8">
+            <h2 class="blog-post-title">Join ALDES</h2>
+            <p>New members must be members of the Liberal Democrats, but are always welcomed. The current subscription is £10, with concessions for those who are unwaged and on low incomes (£5), and students (£3). To join, simply fill in the form below:</p>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input name="cmd" type="hidden" value="_s-xclick">
+                        <input name="hosted_button_id" type="hidden" value="28VVKHURTFUN2">
+                        <div class="form-group"><input name="on0" type="hidden" value="Membership options">
+                            <label class="col-sm-3 control-label">Membership type</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" name="os0">
+                                    <option value="Standard subscription">Standard subscription : £10.00 GBP - yearly</option>
+                                    <option value="Unwaged/Low income">Unwaged/Low income : £5.00 GBP - yearly</option>
+                                    <option value="Student">Student : £3.00 GBP - yearly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group"><input name="on1" type="hidden" value="Area">
+                            <label class="col-sm-3 control-label">Area</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" name="os1">
+                                    <option value="Science">Science</option>
+                                    <option value="Tech">Tech</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Medicine">Medicine</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input name="on2" type="hidden" value="Local party">
+                            <label class="col-sm-3 control-label">Local party</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" maxlength="200" name="os2" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input name="on3" type="hidden" value="Membership number">
+                            <label class="col-sm-3 control-label">Membership number</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" maxlength="200" name="os3" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-offset-3">
+                            <input name="currency_code" type="hidden" value="GBP">
+                            <input alt="PayPal – The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_subscribeCC_LG.gif" type="image">
+                            <img src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" alt="" width="1" height="1" border="0">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% include "partials/sidebar.njk" %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+---
+title: People
+---
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+<div class="blog-post">
+    <div class="row">
+        <div class="col-xl-8">
+            <h2 class="blog-post-title">Our people</h2>
+            <p>Our Executive committee is elected by the membership every year at our Annual General Meeting.</p>
+            {% for person in site.people %}
+            <div class="pb-4 d-flex flex-column flex-md-row">
+                <div class="p-2 col-md-4" align="center">
+                    {% if person.image %}
+                    <img class="rounded-circle img-fluid" src="{{ site.url }}/{{ person.image }}" alt="{{ person.title }}"/>
+                    {% endif %}
+                </div>
+                <div class="col-md-8">
+                    <h2 class="blog-post-title">{{ person.title }}</h2>
+                    <p>{{ person.text }}</p>
+                </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% include "partials/sidebar.njk" %}
+    </div>
+</div>
+{% endblock %}

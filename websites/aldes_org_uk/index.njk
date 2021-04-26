@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.posts
+  size: 5
+  alias: posts
+---
+
+{% extends 'layouts/default.njk' %}
+{% from "partials/card.njk" import card %}
+{% block content %}
+<div class="col-xl-8">
+    <section class="post-feed">
+        {% for post in posts %}
+            {{ card(post) }}
+        {% endfor %}
+    </section>
+    {% include "partials/pagination.njk" %}
+    <br/>
+</div>
+{% include "partials/sidebar.njk" %}
+{% endblock%}

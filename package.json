@@ -1,35 +1,54 @@
 {
-  "name": "justLiberals-11ty",
-  "version": "1.0.0",
-  "description": "Building justLiberals.org.uk",
-  "license": "UNLICENSED",
-  "main": ".eleventy.js",
-  "scripts": {
-    "start": "npm-run-all --parallel dev:*",
-    "build": "npm-run-all prod:*",
-    "sass": "sass --style=compressed src/scss/main.scss src/_includes/css/main.css",
-    "prod:sass": "npm run sass",
-    "prod:11ty": "cross-env ELEVENTY_ENV=prod ELEVENTY_URL='https://www.justliberals.org.uk' eleventy",
-    "dev:sass": "npm run sass -- --watch",
-    "dev:11ty": "cross-env ELEVENTY_ENV=dev ELEVENTY_URL='http://localhost:8080' eleventy --serve"
-  },
+  "name": "justliberals-barn",
+  "description": "The justLiberals barn is where all the assets are kept",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justLiberals/justLiberals.org.uk.git"
+    "url": "https://github.com/justLiberals/justliberals-barn"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:*",
+    "watch:justliberals_org_uk_sass": "sass --no-source-map --watch websites/justliberals_org_uk/scss:.output/websites/justliberals_org_uk/css",
+    "watch:justliberals_org_uk_11ty": "cross-env GHOST_CONTENT_API_KEY=453ce55fdf796124b4a158b334 eleventy --config websites/.justliberals_org_uk.eleventy.js --serve",
+    "watch:aldes_org_uk_sass": "sass --no-source-map --watch websites/aldes_org_uk/scss:.output/websites/aldes_org_uk/css",
+    "watch:aldes_org_uk_11ty": "cross-env GHOST_CONTENT_API_KEY=453ce55fdf796124b4a158b334 eleventy --config websites/.aldes_org_uk.eleventy.js --serve",
+    "build": "npm-run-all build:*",
+    "build:create-output-directories": "mkdir -p .output/emails/transactional .output/emails/newsletters  .output/websites/justliberals_org_uk .output/websites/aldes_org_uk",
+    "build:compile_transactional_html_email_templates": "npx mjml -r emails/transactional/*.j2.mjml -o .output/emails/transactional/",
+    "build:copy_transactional_text_email_templates": "for i in `ls -1 emails/transactional/|egrep '.j2$'`; do echo '---TEXT-HTML-SEPARATOR---' >> .output/emails/transactional/$i; cat emails/transactional/$i >> .output/emails/transactional/$i;done",
+    "build:compile_html_newsletters": "npx mjml -r emails/newsletters/*.j2.mjml -o .output/emails/newsletters/",
+    "build:copy_text_newsletters": "for i in `ls -1 emails/newsletters/|egrep '.j2$'`; do echo '---TEXT-HTML-SEPARATOR---' >> .output/emails/newsletters/$i; cat emails/newsletters/$i >> .output/emails/newsletters/$i;done",
+    "build:compile_justliberals_org_uk_website_css": "sass --no-source-map websites/justliberals_org_uk/scss:.output/websites/justliberals_org_uk/css",
+    "build:postprocess_justliberals_org_uk_website_css": "postcss .output/websites/justliberals_org_uk/css/*.css -u autoprefixer cssnano -r --no-map",
+    "build:compile_justliberals_org_uk_website_html": "cross-env GHOST_CONTENT_API_KEY=453ce55fdf796124b4a158b334 eleventy --config websites/.justliberals_org_uk.eleventy.js",
+    "build:postprocess_justliberals_org_uk_website_html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir .output/websites/justliberals_org_uk/ --output-dir .output/websites/justliberals_org_uk/ --file-ext html",
+    "build:compile_aldes_org_uk_website_css": "sass --no-source-map websites/aldes_org_uk/scss:.output/websites/aldes_org_uk/css",
+    "build:postprocess_aldes_org_uk_website_css": "postcss .output/websites/aldes_org_uk/css/*.css -u autoprefixer cssnano -r --no-map",
+    "build:compile_aldes_org_uk_website_html": "cross-env GHOST_CONTENT_API_KEY=453ce55fdf796124b4a158b334 eleventy --config websites/.aldes_org_uk.eleventy.js",
+    "build:postprocess_aldes_org_uk_website_html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir .output/websites/aldes_org_uk/ --output-dir .output/websites/aldes_org_uk/ --file-ext html",
+    "deploy": "npm-run-all deploy:*",
+    "deploy:sync_justliberals_org_uk_emails": "cd .output/emails; aws s3 sync ./ s3://$JUSTLIBERALS_ORG_UK_EMAIL_BUCKET --delete --acl public-read --size-only --no-progress|cut -d ' ' -f2",
+    "deploy:sync_justliberals_org_uk_website": "cd .output/websites/justliberals_org_uk; aws s3 sync ./ s3://$JUSTLIBERALS_ORG_UK_WEBSITE_BUCKET --delete --acl public-read --size-only --no-progress|cut -d ' ' -f2 | tee invalidate",
+    "deploy:sync_aldes_org_uk_website": "cd .output/websites/aldes_org_uk; aws s3 sync ./ s3://$ALDES_ORG_UK_WEBSITE_BUCKET --delete --acl public-read --size-only --no-progress|cut -d ' ' -f2 | tee invalidate",
+    "deploy:invalidate_justliberals_org_uk_website_changes": "if [ `cat .output/websites/justliberals_org_uk/invalidate` != '' ]; then cat .output/websites/justliberals_org_uk/invalidate|xargs printf -- '/%s\n'|xargs aws cloudfront create-invalidation --distribution-id $JUSTLIBERALS_ORG_UK_DISTRIBUTION --paths; fi",
+    "deploy:invalidate_aldes_org_uk_website_changes": "if [ `cat .output/websites/aldes_org_uk/invalidate` != '' ]; then cat .output/websites/aldes_org_uk/invalidate|xargs printf -- '/%s\n'|xargs aws cloudfront create-invalidation --distribution-id $ALDES_ORG_UK_DISTRIBUTION --paths; fi"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@tryghost/content-api": "^1.4.8",
-    "bootstrap": "^4.5.3",
-    "clean-css": "^4.2.3",
-    "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
-    "eleventy-plugin-local-images": "^0.4.0",
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@tryghost/content-api": "^1.5.4",
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^4.6.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.1",
     "html-minifier": "^4.0.0",
-    "sass": "^1.28.0"
+    "mjml": "^4.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.11"
   },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  }
+  "browserslist": [
+    "last 2 versions"
+  ]
 }

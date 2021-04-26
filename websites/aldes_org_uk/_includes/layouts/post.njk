@@ -1,0 +1,145 @@
+{% extends 'layouts/default.njk' %}
+
+{% set title = post.title %}
+{% set codeinjection_head = post.codeinjection_head %}
+{% set codeinjection_foot = post.codeinjection_foot %}
+
+{% block content %}
+    <article class="blog-post px-3">
+            <figure>
+                <img class="img-fluid rounded" src="{{ post.feature_image }}" alt=""></img>
+            </figure>
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="media">
+                        <img class="author-profile-image rounded-circle d-none d-sm-block" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+                    <div class="media-body pl-sm-2 blog-post-title">
+                        <h2 class="blog-post-title">{{ post.title }}</h2>
+                        <h6 class="blog-post-meta">By {{ post.primary_author.name }} | {{ post.published_at.toDateString() }}</h6>
+                    </div>
+                </div>
+                {% set html = post.html.split('<hr>') %}
+                {{ html[0] | safe }}
+                {{ html[1] | safe }}
+                {% if site.comments == true %}
+                <div class="comments-section">
+                    <a href="#comments" style="color: black; text-decoration: none"><h2 id="comments">Comments</h2></a>
+                    <h6 style="font-style: italic; font-weight: 400">from our Reddit community</h6>
+                    {% for comment_1 in post.comments[1]['data']['children'] %}
+                    {% if comment_1['data']['author'] != "[deleted]" %}
+                    <div class="comment-even">
+                        <strong>{{ comment_1['data']['author'] }}</strong>
+                        {% set comment_content = comment_1['data']['body'].split('\n\n') %}
+                        {% for comment_fragment in comment_content %}
+                        {% if comment_fragment.startsWith("&gt;") %}
+                        <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
+                        {% else %}
+                        <p>
+                        {% set comment_lines = comment_fragment.split('\n') %}
+                        {% for comment_line in comment_lines %}
+                        {{ comment_line }}<br/>
+                        {% endfor %}
+                        </p>
+                        {% endif %}
+                        {% endfor %}
+                        {% for comment_2 in comment_1['data']['replies']['data']['children'] %}
+                        {% if comment_2['data']['author'] != "[deleted]" %}
+                        <div class="comment-odd">
+                            <strong>{{ comment_2['data']['author'] }}</strong>
+                            {% set comment_content = comment_2['data']['body'].split('\n\n') %}
+                            {% for comment_fragment in comment_content %}
+                            {% if comment_fragment.startsWith("&gt;") %}
+                            <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
+                            {% else %}
+                            <p>
+                            {% set comment_lines = comment_fragment.split('\n') %}
+                            {% for comment_line in comment_lines %}
+                            {{ comment_line }}<br/>
+                            {% endfor %}
+                            </p>
+                            {% endif %}
+                            {% endfor %}
+                            {% for comment_3 in comment_2['data']['replies']['data']['children'] %}
+                            {% if comment_3['data']['author'] != "[deleted]" %}
+                            <div class="comment-even">
+                                <strong>{{ comment_3['data']['author'] }}</strong>
+                                {% set comment_content = comment_3['data']['body'].split('\n\n') %}
+                                {% for comment_fragment in comment_content %}
+                                {% if comment_fragment.startsWith("&gt;") %}
+                                <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
+                                {% else %}
+                                <p>
+                                {% set comment_lines = comment_fragment.split('\n') %}
+                                {% for comment_line in comment_lines %}
+                                {{ comment_line }}<br/>
+                                {% endfor %}
+                                </p>
+                                {% endif %}
+                                {% endfor %}
+                                {% for comment_4 in comment_3['data']['replies']['data']['children'] %}
+                                {% if comment_4['data']['author'] != "[deleted]" %}
+                                <div class="comment-odd">
+                                    <strong>{{ comment_4['data']['author'] }}</strong>
+                                    {% set comment_content = comment_4['data']['body'].split('\n\n') %}
+                                    {% for comment_fragment in comment_content %}
+                                    {% if comment_fragment.startsWith("&gt;") %}
+                                    <blockquote style="font-style: italic; padding-left: 2em">"{{ comment_fragment | replace("&gt;","") }}"</blockquote>
+                                    {% else %}
+                                    <p>
+                                    {% set comment_lines = comment_fragment.split('\n') %}
+                                    {% for comment_line in comment_lines %}
+                                    {{ comment_line }}<br/>
+                                    {% endfor %}
+                                    </p>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    <div class="text-center my-4">
+                        <a href="{{  "https://www.reddit.com" + post.comments[0]['data']['children'][0]['data']['permalink'] }}" type="button" class="btn btn-primary btn-lg" target="_blank">Join the conversation!</button>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% include "partials/sidebar.njk" %}
+        </div>
+    </article>
+{% endblock %}
+
+{%- block seo -%}
+    <!--Twitter Card-->
+    <meta name="twitter:site" content="{{ site.twitter }}">
+    <meta name="twitter:creator" content="{{ post.primary_author.twitter }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url + page.url }}">
+    <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
+    <meta name="twitter:description" content="{{ html[0] | safe }}">
+    <meta name="twitter:image" content="{{ post.feature_image }}">
+
+    <!--Schema-->
+    <link rel="author" href="{{ post.primary_author.website }}">
+    <link rel="publisher" href="{{ site.url }}">
+    <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+    <meta itemprop="description" content="{{ html[0] | safe }}">
+    <meta itemprop="image" content="{{ post.feature_image }}">
+
+    <!-- Facebook OpenGraph -->
+    <meta property="og:url" content="{{ site.url + page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }} – {{ site.title }}">
+    <meta property="og:image" content="{{ post.feature_image }}">
+    <meta property="og:description" content="{{ html[0] | safe }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="{{ site.lang }}">
+    <meta property="article:author" content="{{ site.url }}">
+{%- endblock -%}

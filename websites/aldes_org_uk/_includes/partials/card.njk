@@ -1,0 +1,17 @@
+{% macro card(post, author_page="False") %}
+    <div class="blog-post">
+        <figure>
+            <img class="img-fluid rounded-lg" src="{{ post.feature_image }}" alt=""></img>
+        </figure>
+        <div class="media">
+                <img class="author-profile-image rounded-circle d-none d-sm-block mr-sm-2" src="{{ post.primary_author.profile_image }}" alt="{{ post.primary_author.name }}"/>
+            <div class="media-body blog-post-title">
+                <a href="{{ post.url }}"><h2 class="blog-post-title">{{ post.title }}</h2></a>
+                <h6 class="blog-post-meta">By {{ post.primary_author.name }} | {{ post.published_at.toDateString() }}</h6>
+            </div>
+        </div>
+        {% set html = post.html.split('<hr>') %}
+        {{ html[0] | safe }}
+        <a type="button" class="btn btn-primary float-right" href="{{ post.url }}">Read More</a>
+    </div>
+{% endmacro %}

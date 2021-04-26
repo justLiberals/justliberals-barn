@@ -1,0 +1,96 @@
+{
+  "title": "ALDES",
+  "short_title": "ALDES",
+  "description": "Association of Liberal Democrat Engineers and Scientists",
+  "logo": "assets/images/aldes.png",
+  "lang": "en-GB",
+  "comments": false,
+  "navigation": [
+    {
+      "url": "{{ site.url }}/",
+      "label": "Home",
+      "newtab": false
+    },
+    {
+      "url": "{{ site.url }}/about/",
+      "label": "About",
+      "newtab": false
+    },
+    {
+      "url": "{{ site.url }}/people/",
+      "label": "People",
+      "newtab": false
+    },
+    {
+      "url": "{{ site.url }}/join/",
+      "label": "Join",
+      "newtab": false
+    },
+    {
+      "url": "https://www.facebook.com/LibDemEngineersAndScientists",
+      "svg": "facebook",
+      "newtab": true
+    },
+    {
+      "url": "https://twitter.com/AldesLibDems",
+      "svg": "twitter",
+      "newtab": true
+    }
+  ],
+  "sidebar": [
+    {
+      "title": "ALDES",
+      "blurb": [
+        "The Association of Liberal Democrat Engineers and Scientists"
+      ]
+    },
+    {
+      "url": "{{ site.url }}/join/",
+      "image": "assets/images/join-aldes.jpg",
+      "title": "Become a Member",
+      "blurb": [
+        "Join ALDES today to ensure science and reason get a fair hearing in the Lib Dems."
+      ]
+    }
+  ],
+  "people": [
+    {
+      "image": "assets/images/chair.jpg",
+      "title": "Josh Matthews, Chair",
+      "text": "Josh originally studied Chemical Engineering at Loughborough, spending time in industry and at UC Santa Barbara focussing on sustainable hydrogen production. Josh moved to Cambridge where he added an “MBA for engineers” – alongside consulting work and sustainability-themed research – before graduating and settling in Cambridge where he now researches sustainability, business, and emerging technology. Josh joined the Lib Dems in February 2019 before being elected to the Cambridge City Council that August and as Aldes’ Chair in January 2020."
+    },
+    {
+      "image": "assets/images/vice-chair.jpg",
+      "title": "Rob Davidson, Vice-Chair",
+      "text": "Dr Rob Davidson is a data scientist and transparency campaigner best known for founding Scientists for EU. He was a leader in the pro-EU community from 2015 to 2020, and joined the Liberal Democrats in 2019. He believes in Open Knowledge whether that's Open Access, Open Data, Open Source, Open Science or Open Government."
+    },
+    {
+      "image": "assets/images/treasurer.jpg",
+      "title": "Chris Lomax, Treasurer",
+      "text": "Chris Lomax is a Chartered Chemical Engineer and Scientist working as a Consultant and Design Engineer in offshore and onshore energy. Chris is a Cambridge graduate, and has worked for 20 years in a range of positions in the Engineering and Industrial sectors, mainly in food production and energy generation. As a Chemical Engineer, Chris’ main focus is the overall integration and design of industrial plant, understanding what goes on inside the pipes and equipment. Chris also has a background in software engineering and industrial control systems. Chris is a member of the Institute of Chemical Engineers (IChemE)."
+    },
+    {
+      "image": "assets/images/secretary.jpg",
+      "title": "Emma Colliver, Secretary",
+      "text": "Emma originally studied Natural Sciences at the University of Cambridge, specialising in physics. After spending the next five years in fundraising, Emma returned to academia via a Master’s in Data Science at UCL, and is now a computational cancer research PhD student at The Francis Crick Institute, where she studies the lung cancer tumour microenvironment. Emma joined the Lib Dems in 2015 and is a member of the Twickenham and Richmond local party. She was one of the founding members of the party’s Your Liberal Britain initiative, and looks forward to helping party members to engage with ALDES events and STEM-related policy development going forward."
+    },
+    {
+      "image": "assets/images/membership-secretary.jpg",
+      "title": "James Belchamber, Membership Secretary",
+      "text": "James is a college drop-out that built a career out of his passion for computers and the internet. He has spent 15 years in the IT industry, progressing from desktop support - through Sysadmin roles and Agile/DevOps evangelism - to consulting for some of today's most exciting companies. He has also started training people for a career in tech, building educational resources and delivering training in-person and remotely. He prefers the bazaar to the cathedral, open to closed, and federation to centralisation."
+    },
+    {
+      "title": "Leena Farhat, Ordinary Member",
+      "text": ""
+    },
+    {
+      "image": "assets/images/ordinary2.jpg",
+      "title": "Samie Dorgham, Ordinary Member",
+      "text": "Samie studied Biology and an MSc International Health Management at Imperial College London. Since graduating Samie has worked in technology consulting and most recently in Artificial Intelligence, focusing on the safe adoption of unbiased machine learning algorithms in the public sector. Samie joined the Lib Dem’s in 2019, is a member of the ALDES digital identity working group and is the Data Officer for the Newham, Barking and Dagenham local party."
+    },
+    {
+      "title": "Ian Stotesbury, Ordinary Member",
+      "text": ""
+    }
+  ]
+}

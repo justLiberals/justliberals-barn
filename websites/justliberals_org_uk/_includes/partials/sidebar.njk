@@ -1,0 +1,23 @@
+<aside class="col-xl-4 blog-sidebar">
+    {% for item in site.sidebar %}
+    {% if item.url %}
+    <a class="blog-sidebar" href="{{ item.url }}">
+    {% endif %}
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-3 shadow-sm position-relative">
+            {% if item.image %}
+            <img class="card-img-top" width="100%" src={{ site.url }}/{{ item.image }} preserveAspectRatio="xMidYMid slice" focusable="false" role="img" alt=""></img>
+            {% endif %}
+            <div class="col p-3 d-flex flex-column position-static blog-sidebar">
+                {% if item.title %}
+                <h5 class="card-title">{{ item.title }}</h5>
+                {% endif %}
+                {% for paragraph in item.blurb %}
+                <p class="card-text">{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% if item.url %}
+    </a>
+    {% endif %}
+    {% endfor %}
+</aside>

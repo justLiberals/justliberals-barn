@@ -1,7 +1,9 @@
-name: Deploy website
+name: Deploy emails
 on:
   repository_dispatch:
     types: rebuild
+  push:
+    branches: [ main ]
 
 jobs:
   build:
@@ -14,18 +16,19 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: eu-west-2
+        aws-region: ${{ secrets.AWS_REGION }}
 
-    - name: npm install
-      run: npm i
+    - name: Install Node packages
+      run: npm install
 
-    - name: npm run-script build
-      env:
-        GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }} 
+    - name: Build assets
       run: npm run-script build
-    
-    - name: Push to S3
-      run: cd docs; aws s3 sync ./ s3://${{ secrets.AWS_S3_BUCKET }} --delete --acl public-read --size-only --no-progress|cut -d " " -f2 | tee ../invalidate
-    
-    - name: Invalidate changed files
-      run: if [[ `cat invalidate` != "" ]]; then cat invalidate|xargs printf -- '/%s\n'|xargs aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION }} --paths; fi
+
+    - name: Deploy assets
+      run: npm run-script deploy
+      env:
+        JUSTLIBERALS_ORG_UK_EMAIL_BUCKET: ${{ secrets.JUSTLIBERALS_ORG_UK_EMAIL_S3_BUCKET_NAME }}
+        JUSTLIBERALS_ORG_UK_WEBSITE_BUCKET: ${{ secrets.JUSTLIBERALS_ORG_UK_WEBSITE_S3_BUCKET_NAME }}
+        JUSTLIBERALS_ORG_UK_DISTRIBUTION: ${{ secrets.JUSTLIBERALS_ORG_UK_CLOUDFRONT_DISTRIBUTION }}
+        ALDES_ORG_UK_WEBSITE_BUCKET: ${{ secrets.ALDES_ORG_UK_WEBSITE_S3_BUCKET_NAME }}
+        ALDES_ORG_UK_DISTRIBUTION: ${{ secrets.ALDES_ORG_UK_CLOUDFRONT_DISTRIBUTION }}

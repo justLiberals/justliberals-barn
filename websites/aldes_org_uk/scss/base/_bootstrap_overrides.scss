@@ -1,0 +1,165 @@
+// Override Bootstraps Variables Here
+// Reference node_modules/bootstrap/scss/_variables.scss for a full list of variables
+// https://getbootstrap.com/docs/4.3/getting-started/theming/#variable-defaults
+$primary: #1b1a3a;
+$secondary: #faa61a;
+$link-color: #000000;
+$link-highlight-color: #000000;
+$link-decoration: underline;
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-weight-normal: 400;
+$headings-font-weight: 900;
+$font-size-base: 1rem;
+$h2-font-size: 2.4rem;
+$h3-font-size: 1.2rem;
+
+.icon {
+    height: 1em;
+    width: 1em;
+}
+
+.comment-even {
+    border-left: 5px solid $primary;
+    padding: 1em;
+}
+
+.comment-odd {
+    border-left: 5px solid $secondary;
+    padding: 1em;
+}
+
+.author-profile-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.author-profile-max {
+    width: 300px;
+    height: 300px;
+}
+
+.blog-header {
+    background-color: $primary;
+}
+
+.intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.card-img-top {
+    height: auto;
+}
+
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+.blog-pagination>.btn {
+    border-radius: 2rem;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    color: #000000;
+}
+
+.blog-post-title a, .blog-post-title a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.blog-footer {
+    padding: 1rem 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.blog-footer a:link, .blog-footer a:visited {
+    text-decoration: none;
+    color: #faa61a;
+}
+
+.blog-sidebar, .blog-sidebar a, .blog-sidebar a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn {
+    -webkit-appearance: none !important;
+}
+
+.kg-image {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 2em;
+}

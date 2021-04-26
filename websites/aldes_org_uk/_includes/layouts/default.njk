@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>
+            {%- if title -%}
+                {{ title }} - {{ site.title }}
+            {%- else -%}
+                {{ site.title }}
+            {%- endif -%}
+        </title>
+        <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+        <meta name="robots" content="index,follow">
+        <meta name="generator" content="Eleventy">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png?v=rMBWkGx7yJ">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=rMBWkGx7yJ">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=rMBWkGx7yJ">
+        <link rel="manifest" href="/assets/images/site.webmanifest?v=rMBWkGx7yJ">
+        <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=rMBWkGx7yJ" color="#1b1a3a">
+        <link rel="shortcut icon" href="/assets/images/favicon.ico?v=rMBWkGx7yJ">
+        <meta name="msapplication-TileColor" content="#faa61a">
+        <meta name="msapplication-config" content="/assets/images/browserconfig.xml?v=rMBWkGx7yJ">
+        <meta name="theme-color" content="#faa61a">
+
+        {%- block seo -%}
+            <!--Twitter Card-->
+            <meta name="twitter:site" content="{{ site.twitter }}">
+            <meta name="twitter:creator" content="{{ site.twitter }}">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:url" content="{{ site.url + page.url }}">
+            <meta name="twitter:title" content="{{ title + " – " + site.title if title else title }}">
+            <meta name="twitter:description" content="{{ site.description }}">
+            <meta name="twitter:image" content="{{ site.cover_image }}">
+
+            <!--Schema-->
+            <link rel="author" href="{{ site.url }}">
+            <link rel="publisher" href="{{ site.url }}">
+            <meta itemprop="name" content="{{ title + " – " + site.title if title else title }}">
+            <meta itemprop="description" content="{{ site.description }}">
+            <meta itemprop="image" content="{{ site.cover_image }}">
+
+            <!-- Facebook OpenGraph -->
+            <meta property="og:url" content="{{site.url + page.url}}">
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="{{ title + " – " + site.title if title else title }}">
+            <meta property="og:image" content="{{ site.cover_image }}">
+            <meta property="og:description" content="{{ site.description }}">
+            <meta property="og:site_name" content="{{ site.title }}">
+            <meta property="og:locale" content="{{ site.lang }}">
+            <meta property="article:author" content="{{ site.url }}">
+        {%- endblock -%}
+    
+        <link rel="stylesheet" href="/css/main.css">
+    
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        {% include "partials/icons.njk" %}
+        {% include "partials/header.njk" %}
+        <main role="main" class="container pt-4">
+            <div class="row" style="background-color: white">
+                    {% block content %}
+                    {% endblock content %}
+            </div>
+        </main>
+        {% include "partials/footer.njk" %}
+        {{ site.codeinjection_foot | safe if site.codeinjection_foot }}
+        {{ codeinjection_foot | safe if codeinjection_foot }}
+    </body>
+</html>

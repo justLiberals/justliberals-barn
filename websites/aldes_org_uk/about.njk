@@ -1,0 +1,29 @@
+---
+title: About
+---
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+<div class="blog-post">
+    <figure>
+        <img class="img-fluid rounded pb-2" src="{{ site.url }}/assets/images/hero_medic2.jpg" alt="About us"></img>
+    </figure>
+    <div class="row">
+        <div class="col-xl-8">
+            <h2>About us</h2>
+            <p>Virtually all political subjects have some science based dimension. Yet while science provides options, politicians must decide outcomes. Relatively few scientists and those in the science-based professions of engineering, technology and medicine choose get involved in politics, and politicians often have a poor understanding of technical issues.</p>
+            <p>Aldes aims to bridge that gap. Political parties need people with know-how to generate innovative ideas and ensure policy has a foundation in evidence and understanding.</p>
+            <h3>Our Aims</h3>
+            <p>Our aims are set out in our constitution:</p>
+            <ul>
+                <li>To promote better understanding of Science, Technology, Engineering, Mathematics and Medicine (STEMM) fields within the Liberal Democrats and the public in general, and to explain the role of STEMM in the enhancement of the quality of life.</li>
+                <li>To serve the Party by establishing a network of members with STEMM expertise that can support Parliamentarians and Party policy makers.</li>
+                <li>To create a good fellowship amongst the STEMM community within the Party, and develop a better understanding between said communities and politicians.</li>
+            </ul>
+            <h3>Our Constitution</h3>
+            <p>The latest ALDES constitution was adopted by a resolution of the ALDES Annual General Meeting on October 15th 2020. You can find the constitution <a href="https://static.aldes.org.uk/2020/10/ALDES_constitution_2020.pdf">here</a>.</p>
+        </div>
+        {% include "partials/sidebar.njk" %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+---
+title: Sign up to our weekly briefing!
+---
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+<div class="blog-post">
+    <figure>
+        <img class="img-fluid rounded pb-2" src="{{ site.url }}/assets/images/newsletter.jpg" alt="About us"></img>
+    </figure>
+    <div class="row">
+        <div class="col-xl-8">
+            <h2>Want to keep in touch?</h2>
+            <p>Sign up to our weekly briefing - with all the latest news, opinion and analysis from justLiberals and our partners.</p>
+            <form action="https://meadow.justliberals.org.uk/signup" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="my_cool@email.address">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="secret" tabindex="-1" value="11111111"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br/>
+        </div>
+        {% include "partials/sidebar.njk" %}
+    </div>
+</div>
+
+{% endblock %}

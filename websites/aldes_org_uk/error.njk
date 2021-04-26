@@ -1,0 +1,21 @@
+---
+title: Four oh four
+permalink: error.html
+---
+{% extends 'layouts/default.njk' %}
+
+{% block content %}
+<div class="blog-post">
+    <figure>
+        <img class="img-fluid rounded pb-2" src="{{ site.url }}/assets/images/error.jpg" alt="About us"></img>
+    </figure>
+    <div class="row">
+        <div class="col-xl-8">
+            <h2 class="blog-post-title">Four oh four</h2>
+            <p>Page not found, <a href="/">return home</a> to start over.</p>
+        </div>
+        {% include "partials/sidebar.njk" %}
+    </div>
+</div>
+
+{% endblock %}
