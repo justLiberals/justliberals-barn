@@ -1,7 +1,7 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="Montserrat; sans-serif" />
+      <mj-all font-family="Montserrat; sans-serif" line-height="1.15"/>
     </mj-attributes>
     <mj-style>
       .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
