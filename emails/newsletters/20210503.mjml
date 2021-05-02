@@ -1,0 +1,127 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat; sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="40px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"There is frequently more to be learned from the unexpected questions of a child than the discourses of men."</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ John Locke</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Liberals in the news</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">MP calls for ministerial code to cover new party leaders to target Salmond's RT link</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Herald</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Liberal Democrat MP has called for the ministerial code to be extended to party leaders in a bid to hold Alex Salmond to account for his involvement with Russia Today.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Jamie Stone, MP for Caithness, Sutherland and Easter Ross, asked Michael Gove yesterday if he believed that the code should cover leaders of “new political parties who might possibly be receiving payments from the arms of overseas governments who don't hold dear to their heart the best interest of the United Kingdom”.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.heraldscotland.com/news/19262849.mp-calls-ministerial-code-cover-new-party-leaders-target-salmonds-rt-link/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Scotland's drug-deaths scandal: We need a government that's willing to take responsibility and not just blame Westminster – Christine Jardine MP</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Scotsman</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Accepting that she had, in her words, taken her eye off the ball, over the number of drug deaths in Scotland did not, I am sure, come across the way that she intended. Nevertheless it is out there now.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">I suspect that Nicola Sturgeon meant it as a genuine acknowledgement that her government has not done enough and, if re-elected, will try harder. But, for many of us, it stung.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.scotsman.com/news/opinion/columnists/scotlands-drug-deaths-scandal-we-need-a-government-thats-willing-to-take-responsibility-and-not-just-blame-westminster-christine-jardine-mp-3212504">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Why the Liberal Democrats are launching a campaign to Back British Farmers</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Farmers Guardian</mj-text>
+        <mj-text padding="5px 0" font-style="italic">British farmers have been let down by the Conservatives. They’ve been promised that British standards will not be undermined, yet this hasn’t been guaranteed in law. They’ve been promised that levels of funding will be maintained, yet the transition will see huge amounts of income lost.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">And the Government is still expecting our farmers to be the stewards of our landscape, and work with us to cut emissions and help maintain and improve our natural environment – but if they’re not careful there won’t be any farmers left. Family farmers are the backbone of our countryside, and that’s why the Liberal Democrats are launching a campaign to ‘Back British Farmers.’</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.fginsight.com/blogs/why-the-liberal-democrats-are-launching-a-campaign-to-back-british-farmers">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Backing unionist progressives at Scottish election a chance to ‘rescue Britain from Boris’, former Lib Dems leader claims</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Scotsman</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Comparing the SNP to the Tories, Mr Farron claimed finding a way to combat Scottish nationalism would create a “movement” able to win against its English counterpart in 2024.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Speaking to The Scotsman, Mr Farron criticised the ideologies of both administrations, adding he was “deeply concerned about the ongoing division mooted and stirred” by the SNP. He continued: “The problem is when you get into the politics of the flag, people will forgive you anything and everything.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.scotsman.com/news/politics/backing-unionist-progressives-at-scottish-election-a-chance-to-rescue-britain-from-boris-former-lib-dems-leader-claims-3220734">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">justLiberals opinion and analysis</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">White supremacy, and silencing your opposition: why are the Tories embracing fascist ideas?</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">James Belchamber</mj-text>
+        <mj-text padding="5px 0">On Wednesday an opposition political banner was taken down in Stanway, Essex, on the orders of Kevin Bentley, the Conservative deputy leader of Essex County Council. Kevin says he "reported" it but didn't specifically "order" for them to be taken down - in the same way that your boss might tell you about a problem but not specifically demand you fix it. This silencing of opposition is.. well, fascist in nature.</mj-text>
+        <mj-text padding="5px 0">Don't squirm - that's the word for it. It's also not the only instance - the Scottish Conservatives also slipped "14 words" into a Tweet about IndyRef, a famous dog-whistle designed to signal support for white supremecy that has been repeated uncritically by news outlets. If there were any indication that the Conservative Party has now embraced populist nationalism, with all the fascist-inspired excesses that come along for the ride, this should be what awakens us to it. But why are the Tories embracing fascist ideas?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.justliberals.org.uk/white-supremacy-and-silencing-your-opposition-why-are-the-tories-embracing-fascist-ideas/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Want to write for justLiberals?</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Your name here!</mj-text>
+        <mj-text padding="5px" font-style="italic">justLiberals publishes many articles from across the Liberal spectrum.</mj-text>
+        <mj-text padding="5px" font-style="italic">Why not send us over your article idea?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="mailto:submissions@justliberals.org.uk">Email us</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Green gains in red-brick England</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Ben Walker for the New Statesman</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Harry Gorman is a 20-year-old student at the University of Chester. Two years ago, the day after finishing an A-level exam, he was told by the local Green Party that he was going to be their council candidate for Prenton, Birkenhead, on the Wirral peninsula.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">On 6 May he’ll be standing for a seat that Labour won with 60 per cent of the vote the last time it was up for election in 2016.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Gorman’s chances of winning look better than you might expect. From 2003 (when the current boundaries were introduced) until 2010, the ward trended Liberal Democrat. In the past decade it has shifted to become a safe Labour seat. But in 2019, amid the parliamentary chaos of Brexit and a surge in support for the smaller parties, a Green candidate won one of its three local council seats on a significant swing.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.newstatesman.com/politics/polling/2021/04/green-gains-red-brick-england">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">The battle for space is about to heat up</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Tim Marshall for Prospect Magazine</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Westphalia in space? It’s not going to fly. When the great powers signed the treaties of Westphalia in 1648, they created a system in which sovereign states recognized each other’s borders and agreed not to change them or to interfere in each other’s domestic affairs. One thing they didn’t have to bother agreeing on was the question of how high up those borders had to extend. Almost 400 years later we do—but we haven’t managed it yet.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">It’s one of many questions that have become pressing as a golden age of space exploration beckons over the limitless horizon. Can anyone “own” space? By what law can you say a state cannot position a laser-armed satellite above your country or begin mining on the Moon?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.prospectmagazine.co.uk/politics/the-battle-for-space-is-about-to-heat-up">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
