@@ -1,0 +1,91 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat; sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="40px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"In the modern age where everything is connected to everything, the most important thing about what you can do is what you can do with others."</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Paddy Ashdown</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Liberals in the news</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Tory ‘Blue Wall’ in south starting to crumble, claim Liberal Democrats</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Independent</mj-text>
+        <mj-text padding="5px 0" font-style="italic">After Boris Johnson smashed the traditionally Labour “Red Wall” in the Midlands and north of England, there were claims today that the Conservative “Blue Wall” in the south may be starting to crumble. Liberal Democrats said they had their eyes on a number of traditionally true blue parliamentary seats after gaining councillors from Tories across the south and east of England.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">And in a further sign of shifting electoral patterns, Labour and Greens also picked up handfuls of seats in Conservative heartlands like East and West Sussex, Surrey and Kent. The results appeared to give some support to theories that Conservatives are losing support in some traditional strongholds, due both to opposition to Brexit in parts of the south and to graduates and young professionals moving into the home counties to escape high property prices in London.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.independent.co.uk/news/uk/politics/tories-blue-wall-libdems-elections-b1844587.html">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Lib Dems and Greens enjoy resurgence after picking up string of Labour and Tory council seats</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Daily Mail</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Liberal Democrats and Greens put in a strong performance last night as they picked up a string of Labour and Conservative council seats. The Lib Dems made gains across the country, including in at least one Brexit stronghold. This will be welcome news to leader Sir Ed Davey after the party’s poor performance in the last general election, when then leader Jo Swinson lost her seat.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The smaller parties were forecast to take more seats today. The Lib Dems deprived the Tories of overall control of Cambridgeshire County Council, winning five seats. In Brexit-voting Sunderland, they took four from Labour, while in Sheffield they and the Greens helped deprive Labour of overall control. In Stockport, the Lib Dems became the largest party, with a one-seat advantage over Labour. They will probably form a minority administration.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.dailymail.co.uk/news/article-9555833/Lib-Dems-Greens-enjoy-resurgence-picking-string-Labour-Tory-council-seats.html">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Ballots, butts and Battlestar Galactica - ten years on from the AV referendum</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">James Graham for his blog, Quaequam</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Tomorrow marks the 10th anniversary of the AV referendum, and I felt I should mark the date somehow. For me, the AV referendum was the event that finally broke me, in terms of my political career. It’s possible that if I hadn’t had such an awful experience being involved in Yes to Fairer Votes I would have burned out and quit anyway, but it wasn’t so much the straw that broke the camel’s back as it was the wrecking ball.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">It’s a date which has been largely ignored, save for a single a documentary on Radio 4’s Archive series by Chris Mason. You can read my own contemporary account of what happened in my article for Liberator Magazine (issue 346) and my follow up review of Don’t Take No For An Answer by Ken Ritchie and Lewis Baston. I don’t especially recognise the person who wrote those articles; my life is very different now. After quitting the Lib Dems in 2012 and taking voluntary redundancy from Unlock Democracy in 2013, I had a breakdown, went through a period of long term depression and finally found myself in my current career, selling tabletop games in my local game shop. I’ve occasionally dipped a toe back into politics and campaigning since, but it hasn’t stuck and, if anything, merely served to remind me that I’m better off out of it.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">But I do have a few observations about the whole affair, which I thought I would try to summarise here.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="http://www.theliberati.net/quaequamblog/2021/05/04/ballots-butts-and-battlestar-galactica-ten-years-on-from-the-av-referendum/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">How systemic racism affects general practice</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Nicola Merrifield and Emily Stearn for Pulse Today</mj-text>
+        <mj-text padding="5px 0" font-style="italic">‘We no longer see a Britain where the system is deliberately rigged against ethnic minorities. The impediments and disparities do exist, they are varied, and ironically very few of them are directly to do with racism.’ This statement comes from the controversial Government-commissioned Sewell report1, whose remit was to investigate race and ethnic disparities in the UK in the wake of Black Lives Matter protests. Its publication in March led to widespread alarm, including among health leaders and campaigners.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">‘There is clearly an attempt to diminish the impact of racism,’ says Manchester GP Professor Aneez Esmail, a leading expert on racism in the NHS. The statement, from report chair Tony Sewell, looks even more poorly judged in the light of the pandemic. GPs have seen a disproportionately high number of patients and colleagues from black, Asian and minority backgrounds die from Covid-19.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Office for National Statistics found that in England and Wales, males of black African ethnic background had the highest rate of death involving Covid-19 – 2.7 times higher than white males. All ethnic minority groups other than Chinese had a higher rate than the white ethnic population, for both males and females. Tragically, 16 practising GPs have died with Covid – all but three of them from a BAME background. These health outcomes may be down to a mix of structural and biological reasons and it is likely to take years to develop a full picture.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.pulsetoday.co.uk/analysis/cover-feature/how-systemic-racism-affects-general-practice/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
