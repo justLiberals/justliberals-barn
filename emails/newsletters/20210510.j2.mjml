@@ -20,7 +20,7 @@
   <mj-body background-color="white">
     <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
       <mj-column>
-        <mj-text font-size="40px" align="right">
+        <mj-text font-size="36px" align="right">
           <span class="just">just</span><span class="liberals">Liberals</span>
         </mj-text>
       </mj-column>
