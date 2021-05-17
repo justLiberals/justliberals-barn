@@ -26,7 +26,6 @@
     "build:postprocess_aldes_org_uk_website_css": "postcss .output/websites/aldes_org_uk/css/*.css -u autoprefixer cssnano -r --no-map",
     "build:compile_aldes_org_uk_website_html": "cross-env GHOST_CONTENT_API_KEY=453ce55fdf796124b4a158b334 eleventy --config websites/.aldes_org_uk.eleventy.js",
     "build:postprocess_aldes_org_uk_website_html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir .output/websites/aldes_org_uk/ --output-dir .output/websites/aldes_org_uk/ --file-ext html",
-    "build:validate_html": "node validate.js",
     "deploy": "npm-run-all deploy:*",
     "deploy:sync_justliberals_org_uk_emails": "cd .output/emails; aws s3 sync ./ s3://$JUSTLIBERALS_ORG_UK_EMAIL_BUCKET --delete --acl public-read --size-only --no-progress|cut -d ' ' -f2",
     "deploy:sync_justliberals_org_uk_website": "cd .output/websites/justliberals_org_uk; aws s3 sync ./ s3://$JUSTLIBERALS_ORG_UK_WEBSITE_BUCKET --delete --acl public-read --size-only --no-progress|cut -d ' ' -f2 | tee invalidate",
