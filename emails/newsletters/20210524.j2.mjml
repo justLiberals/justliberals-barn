@@ -1,0 +1,110 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat, sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="32px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"This is my country, that is your country; these are the conceptions of narrow souls - to the liberal minded the whole world is a family"</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Virchand Gandhi</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Liberals in the news</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Chesham and Amersham byelection will be test of Tory retreat in south</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Guardian</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Liberal Democrats aim to use next month’s Chesham and Amersham byelection to test the extent of disillusionment with the Conservatives in southern commuter belt seats, Ed Davey has said – even if victory is still seen as a long shot.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">While there has been much focus about Tory gains in former Labour heartlands, this month’s local elections highlighted an apparent retreat for the party in more prosperous areas in the south of England and around London.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">On 17 June, voters in Chesham and Amersham will select a new MP to replace Cheryl Gillan, who died in April, in a Buckinghamshire constituency which has never seen the Conservatives win less than 50% support since it was created in 1974.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.theguardian.com/politics/2021/may/24/lib-dems-chesham-and-amersham-byelection-will-be-test-of-tory-retreat-in-south">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Brexit: Rows with EU over fish threatening deal for finance sector, warn Lib Dems</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Independent</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The UK’s massive financial services sector risks becoming a victim of post-Brexit wrangling over fish, Boris Johnson’s chief negotiator has been warned.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">In a letter to David Frost, Liberal Democrat Treasury spokesperson Christine Jardine warned that thousands of jobs are at risk if an agreement on “equivalence” is held up by the row over access to fishing waters around Jersey.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">A French government source was last week quoted as saying that Paris will delay a financial services deal with Britain until Mr Johnson grants fair access to UK waters for European fishermen. The comment came after the UK sent Royal Navy gunboats to see off an attempted blockade of Jersey by angry French trawlermen.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.independent.co.uk/news/uk/politics/brexit-fish-financial-services-jardine-b1848382.html">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">justLiberals opinion and analysis</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">We need Climate Freedom, NOW</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Rob Davidson</mj-text>
+        <mj-text padding="5px 0">As a child of the 80's, the environment was constantly on my mind. We had the hole in the Ozone Layer, letting in the sun's rays and giving people cancer. As a Cub Scout, I helped manually crush drinks cans for the apparently new concept of recycling. There was the growing Greenhouse Effect, of course, and in fevered dreams I imagined a mushroom cloud bloom over Chernobyl. Between the Cold War and Climate Change, youthful thoughts about the future were sometimes bleak to say the least.</mj-text>
+        <mj-text padding="5px 0">For the youth of today, things are far worse. Ignore for a moment the looming Cold War with China, Russia and a new wave of 'illiberal democracies' and take a look at the environment. What we once called Global Warming and then called Climate Change is now the Climate Emergency.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.justliberals.org.uk/we-need-climate-freedom/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="5px 0">Want to write for justLiberals? Why not send us over your article idea:</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="mailto:submissions@justliberals.org.uk">Email us</mj-button>
+        <mj-text padding="100px 0 0 0">Or why not join us on our Discord?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://discord.gg/tBz3z9BQ">Join us</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Labour’s problem is not the Red Wall – it’s the Grey Wall</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">"Rick", for Flip Chart Fairy Tales</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Labour Party is in danger of losing its nerve again. Ten years ago, the story that Labour spent all the money and caused the country’s massive debt was allowed to go unchallenged. The Labour Party, paralysed by the shock of the election, failed to fight back. By the time the party had recovered its composure and started to challenge the narrative of fiscal incompetence it was too late. No-one was listening.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">This time the story that is going unchallenged is that Labour has lost the support of the working class. Worse still, the Conservatives are becoming the party of the working class. The great class inversion is the story of the moment. When even Keir Starmer says that Labour has lost the trust of the working class, well, it must be true, mustn’t it? Since the elections earlier in May, Labour has collapsed in the opinion polls. Of course it has. The story has become self-fulfilling.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://flipchartfairytales.wordpress.com/2021/05/21/labours-problem-is-not-the-working-class-its-the-grey-wall/amp/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">How Manizha Breaks Down the Walls of Identity Construction</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Naima Muminiy for The Oxus Society</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Manizha, a Tajik-Russian singer representing Russia in this year’s Eurovision, has made headlines for her outspoken views for progressive social causes such as feminism, refugee rights, and LGBT+ rights.  Despite winning the popular vote for her entry into Eurovision, she has faced heavy criticism by Russian nationalists and politicians who claim she is not Russian enough due to her ethnic Tajik background. Her Eurovision entry titled “Russian Woman” has caused additional controversy, with some claiming that it is a declaration of war against Russian traditionalism.  This outrage has even led to the potential involvement of law enforcement on the basis of the song inciting hatred towards Russia and threatening Russian values. However, others have taken to the social media to claim that she is neglecting her Tajik identity by framing herself as a Russian woman.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://oxussociety.org/how-manizha-breaks-down-the-walls-of-identity-construction/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
