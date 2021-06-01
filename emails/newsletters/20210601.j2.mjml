@@ -1,0 +1,84 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat, sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="32px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"The essence of the Liberal outlook lies not in what opinions are held, but in how they are held: instead of being held dogmatically, they are held tentatively, and with a consciousness that new evidence may at any moment lead to their abandonment"</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Bertrand Russell</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">justLiberals opinion and analysis</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">A Liberal education must be centred around the individual</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">James Belchamber</mj-text>
+        <mj-text padding="5px 0">In a previous article I was scathing about this government's approach to education - a regressive insistence on churning out compliant automatons while employers demand creative, self-directed and specialised workers. But in their approach is a logic - that learners all need to be calibrated to a common criteria. This plays out in a national curriculum - literally, everyone learning the same things at the same point in their lives - and comes with the values (uncritical obedience and an unwavering respect for authority) that are required of any system that tries to achieve this.</mj-text>
+        <mj-text padding="5px 0">I no longer believe that should be our goal.</mj-text>
+        <mj-text padding="5px 0">It would not surprise you to know that, as a Liberal, I believe everything starts with - and comes back to - individuals. But education should not just be focused on the individual based on an abstract idea - we need to ground it in the practicalities and intent of education.</mj-text>
+        <mj-text padding="5px 0">So let me convince you of an alternative goal: a much expanded "national curriculum", that every learner progresses through at their own pace and in their own order - and that no one person should ever come close to completing.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.justliberals.org.uk/a-liberal-education-must-be-centred-around-the-individual/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">The secret deportations: how Britain betrayed the Chinese men who served the country in the war</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Dan Hancox for The Guardian</mj-text>
+        <mj-text padding="5px 0" font-style="italic">On 19 October 1945, 13 men gathered in Whitehall for a secret meeting. It was chaired by Courtenay Denis Carew Robinson, a senior Home Office official, and he was joined by representatives of the Foreign Office, the Ministry of War Transport, and the Liverpool police and immigration inspectorate. After the meeting, the Home Office’s aliens department opened a new file, designated HO/213/926. Its contents were not to be discussed in the House of Commons or the Lords, or with the press, or acknowledged to the public. It was titled “Compulsory repatriation of undesirable Chinese seamen”.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">As the vast process of post-second world war reconstruction creaked into action, this deportation programme was, for the Home Office and Clement Attlee’s new government, just one tiny component. The country was devastated – hundreds of thousands were dead, millions were homeless, unemployment and inflation were soaring. The cost of the war had been so great that the UK would not finish paying back its debt to the US until 2006. Amid the bombsites left by the Luftwaffe, poverty, desperation and resentment were rife. In Liverpool, the city council was desperate to free up housing for returning servicemen.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.theguardian.com/news/2021/may/25/chinese-merchant-seamen-liverpool-deportations">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Dominic Cummings is right: herd immunity was always the government’s Plan A</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Philip Ball for Prospect Magazine</mj-text>
+        <mj-text padding="5px 0" font-style="italic">I’d not have put Dominic Cummings down as a masterful explainer, given his endlessly meandering blogs. And in his account to the House of Commons Science and Technology Committee on Wednesday, even he admitted that he is an unreliable witness. But his testimony should have made it very plain why he was absolutely correct to have tweeted in advance, regarding the government’s initial pandemic response plan, that “Herd immunity wasn’t ‘a secret strategy’, it was THE OFFICIAL PUBLIC EXPLAINED ON TV/RADIO STRATEGY!”</mj-text>
+        <mj-text padding="5px 0" font-style="italic">What’s troubling is that there was ever any confusion about this. Sure, Home Secretary Priti Patel told the BBC’s Andrew Marr on Sunday that it was “absolutely not” the initial plan (leading former Newsnight presenter Gavin Esler to tweet “I’m now struggling to decide which of these saintly figures to believe”). And sure, an inquiry to Downing Street reported by ITV’s Robert Peston on Monday drew the response that “Herd immunity was never the policy.” But are we going to doubt, say, that the first lockdown happened on 23rd March 2020 if the government denies it? (Believe me, Health Secretary Matt Hancock already tried that).</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.prospectmagazine.co.uk/science-and-technology/was-herd-immunity-the-government-plan-dominic-cummings-committee-coronavirus">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
