@@ -1,0 +1,82 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat, sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="32px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"A Liberal is a man or a woman or a child who looks forward to a better day, a more tranquil night, and a bright, infinite future"</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Leonard Bernstein</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Dunning-Kruger meets fake news</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">John Timmer for Ars Technica</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Dunning-Kruger effect is one of the most famous—and predictable—biases in human behavior. It posits that people who don't understand a topic also lack sufficient knowledge to recognize that they don't understand it. Instead, these people know just enough to convince themselves that they completely grasp the topic, with results ranging from hilarious to painful.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Inspired by the widespread sharing of blatantly false news articles, a team of US-based researchers looked into whether Dunning-Kruger might be operating in the field of media literacy. Not surprisingly, people overestimate their ability to identify misleading news. But the details are complicated, and there's no obvious route to overcoming this bias.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://arstechnica.com/science/2021/06/dunning-kruger-meets-fake-news/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Boris Johnson Knows Exactly What He’s Doing</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Tom McTague for The Atlantic</mj-text>
+        <mj-text padding="5px 0" font-style="italic">To his most vehement critics, he is worse than a clown: a charlatan who lied his way to the top, who endangers democracy and traffics in racism, and who believes in nothing but his own advancement. He has been accused of triggering a wave of populist anger that he then rode to 10 Downing Street, leaving Britain weakened and in very real danger of dissolution. (Scotland once again is considering making its own exit.) He is leading his country through the most radical reshaping of its economy, electoral map, and international role since World War II. To Johnson’s cry of faith that nothing can go wrong, critics say: No, a lot can go wrong—and very well might.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">When I began meeting with Johnson early this year, I didn’t know precisely how he would take to interrogation. His exuberance worked in my favor; the fact that he is a former journalist, familiar with our wicked ways, did not.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.theatlantic.com/magazine/archive/2021/07/boris-johnson-minister-of-chaos/619010/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">What Oxford taught me about posh people</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">James Rebanks for UnHerd</mj-text>
+        <mj-text padding="5px 0" font-style="italic">A lot of people treat you different when they think you are an Oxford graduate than when they think you are a farm labourer. They talk to you differently. They talk to you more. They invite you to their house and try to make friends with you. They talk about books. Some of this is perhaps based on not unreasonable assumptions. Some of it is just lazy snobbery. I knew people that would talk down to me or my friends because they thought we weren’t very bright or worth very much. With those people I’d shamelessly mention having been to Oxford to knock them back a bit. It was like sprinkling fairy dust. They’d shrink back as if I’d said the password — or worse, start fawning, when five minutes earlier they’d thought I was northern, common, and knew nowt. Snobs and the powerful fetishise ‘academic’ credentials. I didn’t even pick my degree up, but it didn’t matter. Once you are in the club the detail isn’t important. You just have to look at our leading politicians. Boris Johnson would be stacking shelves in Aldi or working down the chippie if he’d been born in Hartlepool.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://unherd.com/2021/05/what-oxford-taught-me-about-posh-people/">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">The Surprising Honolulu Origins of the National Fight Over Same-Sex Marriage</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Sasha Issenberg for Politico</mj-text>
+        <mj-text padding="5px 0" font-style="italic">He would bring three same-sex couples, two female and one male, to the main office of the Hawaii Department of Public Health in downtown Honolulu, where they would complete applications for marriage licenses. Woods was not a lawyer, but had studied the family-law code, which included in its marriage regulations a reference to “the husband” and “the wife” without any specific indication that there had to be only one of each or requirement that together they be capable of reproduction. Woods had envisioned two possible scenarios. In one, the three couples walk out of the office as the first same-sex couples on earth legally authorized to marry. In the other, Woods would tell the assembled media to follow him and the couples as they walked to the local headquarters of the American Civil Liberties Union. The ACLU lawyers had ignored and humiliated Woods all year in his efforts to conduct a mass wedding ceremony alongside Honolulu’s pride parade, but now would be pressured by the media coverage into taking his project seriously.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.politico.com/amp/news/magazine/2021/05/31/issenberg-book-excerpt-bill-woods-honolulu-doma-491401">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
