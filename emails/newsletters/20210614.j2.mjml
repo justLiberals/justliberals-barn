@@ -1,0 +1,110 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat, sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="32px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"Reality has a well-known liberal bias"</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Stephen Colbert</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Liberals in the news</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Catch-up: 'Did the right man resign?' Williamson asked</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">TES News</mj-text>
+        <mj-text padding="5px 0" font-style="italic">"Sir Kevan Collins has a distinguished 30-year career in education, while the secretary of state has spent 18 months presiding over nothing but blunders.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">"So does the secretary of state think that the right man resigned?"</mj-text>
+        <mj-text padding="5px 0" font-style="italic">It certainly won't have been Gavin Williamson's favourite question of the afternoon.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">But there was no running from the killer line delivered by Lib Dem deputy leader Daisy Cooper, which was just one of a series of scathing comments about last week's catch-up announcement.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.tes.com/news/catch-did-right-man-resign-williamson-asked">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Being a carer is "way harder" than being in Cabinet, admits Ed Davey</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Express</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Sir Ed Davey does not hesitate when asked whether it is harder to be a cabinet minister or a carer. Caring is "way harder".</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The former secretary of state for energy and climate change speaks from experience. As a schoolboy he cared for his terminally ill mother, bringing her morphine and helping her use the bathroom. Today he is the proud dad of John, a 13-year-old with a brain condition which means he struggles to talk and needs help to walk. When Sir Ed sat at the cabinet table he had an army of civil servants at his command. But when he and his “amazing” wife, Emily, get John up in the morning and put him to bed at night they, like fellow carers across the nation, are motivated by love and rely on their own strength.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.express.co.uk/news/politics/1448938/britain-care-cabinet-minister-carer-sir-ed-davey">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">justLiberals opinion and analysis</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Ownership for all</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">William Francis</mj-text>
+        <mj-text padding="5px 0">One of the most glaring contradictions of British politics is the increasing attention paid to economic inequality by academics and the public, whilst decisions made by the central government do little to address this problem and actively make it worse. I suspect this has to do with wealth inequality being framed as an abstraction; something to be vaguely 'tackled' rather than a clear narrative about how policy should improve the lived experiences of ordinary people. A positive Liberal case for mass ownership could be the remedy to this problem.</mj-text>
+        <mj-text padding="5px 0">Liberals have long seen property as fundamental for creating liberty. For the Liberal MP Hilaire Belloc, this chiefly meant promoting ownership of small landholdings and stakes in co-operative enterprises. This was a cornerstone of Distributism, a proposed alternative to what Belloc saw as the collectivist ideologies of socialism and capitalism. That ideology was highly influential among the Unservile State group, who saw property as a form of economic security independent of employment or state welfare, with the Liberal Parliamentary candidate Ramsay Muir, arguing that 'liberty will be strengthened by the almost universal possession of "a bit of property" '.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.justliberals.org.uk/ownership-for-all/">Read More</mj-button>
+      </mj-column>
+      </mj-section>
+      <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0">Want to write for justLiberals? Why not send us over your article idea:</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="mailto:submissions@justliberals.org.uk">Email us</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0">Or why not join us on our Discord?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://discord.gg/mKwBdxvt">Join us</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Like we were enemies in a war</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">A report by Amnesty International</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Since 2017, the government of China has carried out massive and systematic abuses against Muslims living in the Xinjiang Uyghur Autonomous Region (Xinjiang). The human suffering has been immense. Huge numbers of men and women from predominantly Muslim ethnic groups have been arbitrarily detained and sent to internment camps or prison. The internment camp system is part of a larger campaign of subjugation and forced assimilation of ethnic minorities in Xinjiang.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">From late 2019 to mid 2021, Amnesty International has been investigating these abuses. On 10 June Amnesty published a report based on new first-hand testimonies gathered from former detainees of the internment camps and other people who were present in Xinjiang after 2017, as well as from an analysis of satellite imagery and data. The report provides the most comprehensive account ever of life inside the internment camps. The evidence Amnesty International has gathered provides a factual basis for the conclusion that the Chinese government has committed at least the following crimes against humanity: imprisonment, torture, and persecution.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The government’s abuses are ongoing. Large numbers of people are still arbitrarily detained in Xinjiang. Moreover, the government has devoted tremendous resources to concealing the truth about its actions. It prevents millions of people living in Xinjiang from communicating freely about the situation and denies journalists and investigators meaningful access to the region. People living abroad are often unable to obtain information about family members in Xinjiang who are missing and presumed to be detained.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">This website presents the evidence gathered by Amnesty’s investigation. This includes the full report as well as detailed information about 60 cases of missing or detained persons..</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://xinjiang.amnesty.org/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
