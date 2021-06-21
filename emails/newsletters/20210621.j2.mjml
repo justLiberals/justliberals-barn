@@ -1,0 +1,120 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Montserrat, sans-serif" line-height="1.15"/>
+    </mj-attributes>
+    <mj-style>
+      .just { color: black; font-weight: 600; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .liberals { color: white; font-weight: 700; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 6% }
+    </mj-style>
+    <mj-style>
+      .link-text { background: grey; color: white; font-family: monospace; padding: 10px }
+    </mj-style>
+    <mj-style>
+      a { color: white }
+    </mj-style>
+    <mj-breakpoint width="600px" />
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section background-color="#ffc60a" padding="10px 0 0 0" direction="rtl">
+      <mj-column>
+        <mj-text font-size="32px" align="right">
+          <span class="just">just</span><span class="liberals">Liberals</span>
+        </mj-text>
+      </mj-column>
+      <mj-column vertical-align="bottom">
+        <mj-text font-size="24px" align="left">
+          Weekly Briefing
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text font-style="italic" font-weight="600" padding="20px 50px 0px 50px">"The price of liberty is eternal watchfulness, because when men get power into their hands they nearly always abuse it"</mj-text>
+        <mj-text font-style="italic" font-weight="200" padding="5px 100px 20px 80px">~ Ramsay Muir</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Liberals in the news</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Tories’ Culture War Going Down Like A ‘Lead Balloon’ In ‘Blue Wall’</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Huffington Post</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Boris Johnson’s so-called “culture war” is turning off voters in southern Tory seats, a senior Liberal Democrat said on the eve of a key by-election result.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Munira Wilson told HuffPost UK that foreign aid cuts and some MPs’ support for those who boo England players taking the knee were going down “like a lead balloon” in the so-called “blue wall” of Tory seats.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Her comments came as voters went to the polls in Chesham and Amersham on Thursday, which the Lib Dems are hoping to win from the Tories for the first time ever.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.huffingtonpost.co.uk/entry/tories-libdems-byelection-culture-war_uk_60cb64b4e4b05fb35761894e">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">The Lib Dems have shown the Conservatives they can’t have it all their own way – but there is work to do</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">The Independent</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Until now, a narrative had developed around British politics that seemed very plausible after the Hartlepool by-election and earlier Conservative successes in the Midlands and north.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The story went that the Conservatives now had an unassailable dominance of British politics, and was based on three assumptions: that the inroads they had made in traditional “red wall” Labour-voting areas, and among what used to be called the “working class”, had become permanent; that Labour had been eliminated as a serious force in Scotland; and that the party could retain the support of relatively affluent, as well as older, voters in both suburban and rural areas.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.independent.co.uk/voices/boris-johnson-lib-dems-win-labour-b1869349.html">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">justLiberals opinion and analysis</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">There is no such thing as ethical capitalism</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">James Belchamber</mj-text>
+        <mj-text padding="5px 0">Knives are an inseparable part of everyday life. We use them when cooking, we use them at work. Every day, millions use their nearest knife to open boxes, packages and letters. Just have a think about how many knives are in your house right now.</mj-text>
+        <mj-text padding="5px 0">We also know that knives can be used for great evil; something communities have struggled with for.. well, forever. The solution? Regulation.</mj-text>
+        <mj-text padding="5px 0">Regulation of knives is mostly uncontroversial - as a society, we mostly accept that a chef can carry very sharp and dangerous knives between home and work, but we expect them to travel directly between those places (and we enforce that expectation). Knives for general carry are limited in length and in the way they lock - outside of this, you need a specific reason. Some bemoan this, but generally it's agreed that the liberty of.. well, living - outweighs the infringement on liberty of needing a reason to carry about a dangerous weapon.</mj-text>
+        <mj-text padding="5px 0">The message is clear - knives are a tool, they can cause a lot of harm, and we do not rely on owners of knives to be benevolent and ethical in their ownership, storage and operation of knives. We regulate knives, and the owners of knives, in the pursuit of better outcomes - not banning them, but very clearly setting out rules based on avoiding harm and promoting freedom.</mj-text>
+        <mj-text padding="5px 0">But with capitalism - and, more generally, free markets and commercial enterprise - some have bought into the myth that there is an "ethical" variant we can nurture and trust.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.justliberals.org.uk/there-is-no-such-thing-as-ethical-capitalism/">Read More</mj-button>
+      </mj-column>
+      </mj-section>
+      <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0">Want to write for justLiberals? Why not send us over your article idea:</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="mailto:submissions@justliberals.org.uk">Email us</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0">Or why not join us on our Discord?</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://discord.gg/Kbgerha8">Join us</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column background-color="#7d7d7d">
+        <mj-text font-weight="600" font-size="24px" color="white">Recommended by Liberals</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">Buckingham Palace banned ethnic minorities from office roles, papers reveal</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">David Pegg and Rob Evans for The Guardian</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The Queen’s courtiers banned “coloured immigrants or foreigners” from serving in clerical roles in the royal household until at least the late 1960s, according to newly discovered documents that will reignite the debate over the British royal family and race.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The documents also shed light on how Buckingham Palace negotiated controversial clauses – that remain in place to this day – exempting the Queen and her household from laws that prevent race and sex discrimination.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">The papers were discovered at the National Archives as part of the Guardian’s ongoing investigation into the royal family’s use of an arcane parliamentary procedure, known as Queen’s consent, to secretly influence the content of British laws.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">They reveal how in 1968, the Queen’s chief financial manager informed civil servants that “it was not, in fact, the practice to appoint coloured immigrants or foreigners” to clerical roles in the royal household, although they were permitted to work as domestic servants.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://www.theguardian.com/uk-news/2021/jun/02/buckingham-palace-banned-ethnic-minorities-from-office-roles-papers-reveal">Read More</mj-button>
+      </mj-column>
+      <mj-column padding="10px">
+        <mj-text padding="0" font-weight="600" font-size="14px">The efforts to make text-based AI less racist and terrible</mj-text>
+        <mj-text padding="0" font-style="italic" font-weight="200">Khari Johnson for Ars Technica</mj-text>
+        <mj-text padding="5px 0" font-style="italic">In July 2020, OpenAI launched GPT-3, an artificial intelligence language model that quickly stoked excitement about computers writing poetry, news articles, and programming code. Just as quickly, it was shown to sometimes be foulmouthed and toxic. OpenAI said it was working on fixes, but the company recently discovered GPT-3 was being used to generate child porn.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">Now OpenAI researchers say they’ve found a way to curtail GPT-3’s toxic text by feeding the program roughly 100 encyclopedia-like samples of writing by human professionals on topics like history and technology but also abuse, violence, and injustice.</mj-text>
+        <mj-text padding="5px 0" font-style="italic">OpenAI’s project shows how the tech industry is scrambling to constrain the dark side of a technology that’s shown enormous potential but also can spread disinformation and perpetuate biases. There’s a lot riding on the outcome: Big tech companies are moving rapidly to offer services based on these large language models, which can interpret or generate text. Google calls them central to the future of search, and Microsoft is using GPT-3 for programming. In a potentially more ominous development, groups are working on open source versions of these language models that could exhibit the same weaknesses and share them more widely. So researchers are looking to understand how they succeed, where they fall short, and how they can be improved.</mj-text>
+        <mj-button background-color="#ffc60a" color="black" align="right" vertical-align="bottom" padding="10px" href="https://arstechnica.com/science/2021/06/the-efforts-to-make-text-based-ai-less-racist-and-terrible/">Read More</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#000000">
+      <mj-column>
+        <mj-text color="white">Feedback? Email us: <a href="mailto:hello@justliberals.org.uk?subject=Weekly Briefing">hello@justliberals.org.uk</a></mj-text>
+        <mj-text color="white">You were sent this email because you signed up for the justLiberals weekly briefing. To unsubscribe <a href="{{ unsubscribe_path }}">click here</a>.</mj-text>
+        <mj-text color="white">Sent by justLiberals.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
