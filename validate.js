@@ -3,6 +3,39 @@ var fs = require("fs");
 var path = require("path");
 var http = require("http");
 
+if (process.argv.length != 3) {
+  console.log("Validator takes one argument ('nu' or 'w3c')");
+  process.exit(1);
+}
+
+switch (process.argv[2]) {
+  case "nu":
+    var validator_options = {
+      hostname: "validator.nu",
+      path: "/?out=json",
+      method: "POST",
+      headers: {
+        "User-Agent" : "Mozilla/5.0",
+        "Content-Type" : "text/html; charset=utf-8"
+      }
+    };
+    break;
+  case "w3c":
+    var validator_options = {
+      hostname: "validator.w3.org",
+      path: "/nu/?out=json",
+      method: "POST",
+      headers: {
+        "User-Agent" : "Mozilla/5.0",
+        "Content-Type" : "text/html; charset=utf-8"
+      }
+    };
+    break;
+  default:
+    console.log("Arg must be 'nu' or 'w3c'");
+    process.exit(1);
+}
+
 ignored_email_errors = [
   "Attribute “xmlns:v” not allowed here.",
   "Attribute “xmlns:o” not allowed here.",
@@ -92,16 +125,7 @@ async function* filesToScan() {
 
 (async function () {
   for await (const [filepath, isEmail] of filesToScan()) {
-    const options = {
-      hostname: "validator.nu",
-      path: "/?out=json",
-      method: "POST",
-      headers: {
-        "User-Agent" : "Mozilla/5.0",
-        "Content-Type" : "text/html; charset=utf-8"
-      }
-    };
-    const req = http.request(options, function (res) {
+    const req = http.request(validator_options, function (res) {
       assert.strictEqual(res.statusCode, 200);
 
       var buffers = [];
