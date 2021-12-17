@@ -1,5 +1,5 @@
 # justLiberals barn
-The justLiberals barn is where all the assets are kept. 
+The justLiberals barn is where all the assets are kept.
 
 ## Why?
 Assets for various parts of justLiberals were kept across a few places, and it was hard to track. It's also hard to on-board new people when you need to start with a map of where everything is (there was also a small amount of copy-paste engineering going on between repositories..).
